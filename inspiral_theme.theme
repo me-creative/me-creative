@@ -1,0 +1,59 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ */
+function inspiral_theme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
+      'bg-primary' => t('Primary'),
+      'bg-secondary' => t('Secondary'),
+      'bg-light' => t('Light'),
+      'bg-dark' => t('Dark'),
+      'bg-white' => t('White'),
+      'bg-transparent' => t('Transparent'),
+  );
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = array(
+      'bg-primary' => t('Primary'),
+      'bg-secondary' => t('Secondary'),
+      'bg-light' => t('Light'),
+      'bg-dark' => t('Dark'),
+      'bg-white' => t('White'),
+      'bg-transparent' => t('Transparent'),
+  );
+}
+
+function inspiral_theme_preprocess_menu(array &$variables) {
+  $id = 0;
+  foreach ($variables['items'] as $key => $item) {
+    $attribute = &$variables['items'][$key]['attributes'];
+
+    //$key might change if the link is pointing to another place
+    //but is also a very ugly id and some times very big
+    //$attribute->setAttribute('id', $key);
+
+    //so to get a smaller id from previous key 
+    //use http://php.net/manual/en/function.hash.php
+    // $key_hash = hash('crc32b', $key);
+    // $attribute->setAttribute('id', $key_hash);
+
+    //id will change once the order of menu items changes
+    //or when items are added or deleted
+    $attribute->setAttribute('id', "id-" . ++$id);    
+
+    //how does one get them mlid from the database which would stay the same no matter what
+    //probably using a function call that uses 
+    //https://api.drupal.org/api/drupal/core!lib!Drupal.php/function/Drupal%3A%3AentityQuery/8.2.x
+
+    // can this be used ? 
+    //http://www.drupalcontrib.org/api/drupal/drupal%21core%21includes%21menu.inc/function/menu_tree_all_data/8 
+  }
+}

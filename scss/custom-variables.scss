@@ -1,0 +1,530 @@
+/* VARIABLES */
+$one-column-width: 				100%;
+
+/* TYPOGRAPHY */
+
+@import 'compass/support';                     // Add Compass and IE vendor prefix support variables.
+@import 'compass/utilities/general/clearfix';  // Better than Drupal's clearfix.
+@import 'compass/utilities/sprites';           // See http://compass-style.org/help/tutorials/spriting/
+@import 'compass/css3';                        // Use one CSS3 mixin instead of multiple vendor prefixes.
+
+
+@include font-face("Philosopher-Regular", font-files("Philosopher-R.ttf", "Philosopher-R.woff", "Philosopher-R.eot", "Philosopher-R.svg"));
+@include font-face("Philosopher-Bold", font-files("Philosopher-B.ttf", "Philosopher-B.woff", "Philosopher-B.eot", "Philosopher-B.svg"));
+@include font-face("Ubuntu-Regular", font-files("Ubuntu-R.ttf", "Ubuntu-R.woff", "Ubuntu-R.eot", "Ubuntu-R.svg"));
+@include font-face("Ubuntu-Light", font-files("Ubuntu-L.ttf", "Ubuntu-L.woff", "Ubuntu-L.eot", "Ubuntu-L.svg"));
+@include font-face("Ubuntu-Bold", font-files("Ubuntu-B.ttf", "Ubuntu-B.woff", "Ubuntu-B.eot", "Ubuntu-B.svg"));
+@include font-face("Pyidaungsu-Regular", font-files("Pyidaungsu-1.8_Regular.ttf", "Pyidaungsu-1.8_Regular.woff", "Pyidaungsu-1.8_Regular.eot", "Pyidaungsu-1.8_Regular.svg"));
+@include font-face("Pyidaungsu-Bold", font-files("Pyidaungsu-1.8_Bold.ttf", "Pyidaungsu-1.8_Bold.woff", "Pyidaungsu-1.8_Bold.eot", "Pyidaungsu-1.8_Bold.svg"));
+
+
+// FONT FAMILY
+@mixin text-font-unicode-family($font-name) {
+  font-family: $font-name,"Pyidaungsu-Regular","Arial",sans-serif;
+}
+
+@mixin text-font-title-unicode-family($font-name) {
+  font-family: $font-name,"Pyidaungsu-Bold","Arial",sans-serif;
+}
+
+// COLORS
+$primary-shade: 				#A8CF45;
+$primary-light: 				lighten($primary-shade, 37%);
+$primary-dark: 					darken($primary-shade, 12%);
+
+$accent-shade: 					#0079C0;
+$accent-light: 					lighten($accent-shade, 37%);
+$accent-dark: 					darken($accent-shade, 12%);
+
+$a-link-color:					#B0B0B0;
+$a-link-hover-color:			#005581;
+
+$header-bg:						rgba(0, 0, 0, 0.66928);
+$header-border:               	#eaeae9;
+
+$menu-link-color:				#d6eccf;
+$menu-hover-bg:					#126d67;
+$menu-bg:						$a-link-color;
+$submenu-hover:					#000000;
+$submenu-bg:					$a-link-color;
+
+
+$p-color:						#070712;
+
+$border-color: 					#4C4C4C;
+$page-bg:						#f5f5f4;
+$page-border:					#ededed;
+$pager-color:					#ececeb;
+$access-denied-color:         	#535353;
+
+$news-info-color:				rgba(83,83,83,0.5);
+$event-info-color:				rgba(83,83,83,0.8);
+
+$social-bg:                   	$a-link-color;
+
+$region-tertiary-content-bg:	$menu-link-color;
+
+$footer-bg:						$a-link-color;
+$footer-link-color:				rgba(225,225,225,0.3);
+
+//* Lingua Myanmar Color Variable 
+$primary-color:                              #F59300;
+$secondary-color:                            #554236;
+$nav-hover-top-color:                        #D68607;
+$color-footer-bg:                            #393939;
+$color-footer-p:                             #BDBDBD;
+$color-white:                                #ffffff;
+$hover-col-region-top-header:                #526085;
+$hover-bg-region-top-header:                 #F5F6F8;
+$color-regiont-top-header:                   #A7ACC2;
+$color-content-us-p:                         #828282;
+$color-qt-title:                             #cccccc;
+
+
+// SPACING / MARGIN, PADDING
+$heading-padding-medium:      	22px;
+$heading-padding-large:       	42px;
+
+$heading-padding-y-medium:    	22px 0;
+$heading-padding-y-large:     	42px 0;
+
+$heading-padding-x-medium:    	0 22px;
+$heading-padding-x-large:     	0 42px;
+
+$block-padding-medium:        	12px;
+$block-padding-large:         	22px;
+
+$block-padding-y-medium:      	12px 0;
+$block-padding-y-large:       	22px 0;
+
+$block-padding-x-medium:      	0 12px;
+$block-padding-x-large:       	0 22px;
+
+$block-margin-medium:         	12px;
+$block-margin-large:          	22px;
+
+$block-margin-x-medium:       	0 12px;
+$block-margin-x-large:        	0 22px;
+
+$block-margin-y-medium:       	12px 0;
+$block-margin-y-large:        	22px 0;
+
+$margin-large:                  60px;
+$margin-medium:                 30px;
+
+
+// Reassign color vars to semantic color scheme
+$white: #fff;
+$red: #dc3545;
+$yellow: #ffc107;
+$green: #28a745;
+$cyan: #17a2b8;
+$gray-100: #f8f9fa !default;
+$gray-800: #343a40 !default;
+$theme-colors: ( primary: $accent-shade, secondary: $primary-shade, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
+$brand-primary: $accent-shade;
+$brand-inverse: $primary-shade;
+$inverse-bg: $primary-shade;
+
+// LINKS
+// Style anchor elements.
+$link-color: $accent-shade;
+$link-decoration: none;
+$link-hover-color: $accent-dark;
+$link-hover-decoration: underline;
+
+// COMMENTS
+$comment-spacer-x: 1.25em;
+$comment-spacer-y: 1.25em;
+
+// Responsive font sizes
+$enable-responsive-font-sizes: true;
+
+
+$grid-width: 1170px;
+$news-detail-width: 969px;
+$news-detail-body-width: 800px;
+$gutter-horizontal: 40px;
+$gutter-vertical: 30px;
+
+$default-letter-spacing: 3px;
+
+$border-radius-page: 7px;
+
+$media-date-font-size: 14px;
+$media-title-font-size: 48px;
+
+$media-title-line-height: 67px;
+
+$blue-plaque-title-font-size: 38px;
+
+
+
+// FONT VARIABLES
+$font-size-base: 			1rem; // Assumes the browser default, typically `16px`
+$font-size-lg: 				1.25rem;
+$font-size-sm: 				.875rem;
+$font-size-xs: 				.75rem;
+
+$font-size-h1: 				2.5rem;
+$font-size-h2: 				48px; //1.25rem;
+$font-size-h3: 				1.75rem;
+$font-size-h4: 				1.5rem;
+$font-size-h5: 				1.25rem;
+$font-size-h6: 				1rem;
+
+// $p-font-size:				18px;
+$footer-font-size:			14px;
+$button-font-size:          $footer-font-size;
+$medium-font-size:			24px;
+
+$font-style-italic:			italic;
+$font-weight-normal: 		normal;
+$font-weight-light:         300;
+$font-weight-thin:          100;
+$font-weight-bold: 			bold;
+
+$font-weight-base: 			$font-weight-normal;
+
+$line-height-base: 			1.5;
+
+
+//* Lignua Myanmar Font Variables
+$p-font-size:                1.4rem;
+$menu-item-font-size:        1.9rem;
+$menu-font-size:             1.5rem;
+$h1-font-size:               4.4rem;
+$h2-font-size:               3.5rem;
+$h3-font-size:               2.5rem;
+$h4-font-size:               2.2rem;
+$h5-font-size:               1.8rem; 
+$footer-font-size:           1.1rem;
+$large-font-size:              7rem;
+
+
+///@mixin
+
+@mixin button($bg-color, $border) {
+    @include border-radius(4px);
+    font-size: $button-font-size;
+    color: $white;
+    background: $bg-color;
+    border: 1px solid $border;
+    padding: 15px 28px;
+    letter-spacing: 5.6px;
+    text-transform: uppercase;
+}
+
+@mixin heading {
+    @include text-font-title-unicode-family(NeurialGrotesk-Medium);
+    font-size: $font-size-h2;
+    line-height: 56px;
+}
+
+h1, h2 {
+    @include heading;
+    margin-bottom: 30px;
+    color: $white;
+}
+
+
+/* CUSTOM STARTS HERE
+--------------------------------------------------*/
+@mixin wrapper($width) {
+    max-width: $width;
+    margin: 0 auto;
+}
+
+// flex
+@mixin flexbox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin d-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  @mixin d-inline-flex {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  
+  @mixin flex-row {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  @mixin flex-column {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  @mixin flex-row-reverse {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  
+  @mixin flex-column-reverse {
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  
+  @mixin flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  @mixin flex-nowrap {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  
+  @mixin flex-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+  
+  @mixin flex($values) {
+    -webkit-box-flex: $values;
+    -moz-box-flex: $values;
+    -webkit-flex: $values;
+    -ms-flex: $values;
+    flex: $values;
+  }
+  
+  @mixin flex-fill {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  
+  @mixin flex-grow-0 {
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+  
+  @mixin flex-grow-1 {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  
+  @mixin flex-shrink-0 {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+  
+  @mixin flex-shrink-1 {
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+  }
+  
+  @mixin justify-content-start {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  
+  @mixin justify-content-end {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  
+  @mixin justify-content-center {
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  @mixin justify-content-between {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  @mixin justify-content-around {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  
+  @mixin align-items-start {
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  }
+  
+  @mixin align-items-end {
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    -webkit-align-items: end;
+    align-items: end;
+  }
+  
+  @mixin align-items-center {
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  @mixin align-items-baseline {
+    -webkit-box-align: baseline;
+    -moz-box-align: baseline;
+    -ms-flex-align: baseline;
+    -webkit-align-items: baseline;
+    align-items: baseline;
+  }
+  
+  @mixin align-items-stretch {
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+  }
+  
+  @mixin align-content-start {
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+  }
+  
+  @mixin align-content-end {
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+  }
+  
+  @mixin align-content-center {
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+  
+  @mixin align-content-between {
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+  }
+  
+  @mixin align-content-around {
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+  }
+  
+  @mixin align-content-stretch {
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+  }
+  
+  @mixin align-self-auto {
+    -ms-flex-item-align: auto;
+    align-self: auto;
+  }
+  
+  @mixin align-self-start {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+  
+  @mixin align-self-end {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+  
+  @mixin align-self-center {
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+  
+  @mixin align-self-baseline {
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+  
+  @mixin align-self-stretch {
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+  }
+  
+// end flex
+@mixin border-radius($value) {
+    -moz-border-radius: $value;
+    -webkit-border-radius: $value;
+    border-radius: $value;
+}
+
+
+@mixin parallel-display($position) {
+    display: inline-block;
+    vertical-align: $position;
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+@mixin text-uppercase {
+    text-transform: uppercase;
+}
+
+@mixin active-border-bottom {
+    border: 0;
+    color: $secondary-color;
+    border-bottom: 4px solid $secondary-color;
+    background: transparent;
+}
+
+@mixin d-none {
+    display: none;
+}
+
+@mixin margin-bottom($value) {
+    margin-bottom: $value;
+}
+
+@mixin transform-XY($value, $val) {
+    top: $val;
+    left: $value;
+    transform: translate(-$value, -$val);
+}
+
+@mixin transform-Y($value) {
+    top: $value;
+    transform: translateY(-$value);
+}
+
+@mixin fontawesome($content) {
+    @extend %fa-icon;
+    @extend .fas;
+    @include text-font-unicode-family("Font Awesome 5 Free");
+    content: fa-content($content);
+}
+
+
+@mixin h1 {
+    font-size: $h1-font-size;
+    line-height: 4.9rem;
+}
+
+@mixin h2 {
+    color: $color-white;
+    font-size: $h2-font-size;
+    line-height: 39px;
+}
+
+@mixin h3 {
+    color: $color-qt-title;
+    font-size: $h3-font-size;
+    line-height: 28px;
+}
+
+
+@mixin h5 {
+    @include text-font-title-unicode-family("Ubuntu-Bold");
+    color: $color-footer-p;
+    font-size: $h5-font-size;
+    line-height: 23px;
+}

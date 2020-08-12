@@ -1,0 +1,34 @@
+/* MIXINS */
+
+// @import "custom-variables";
+
+// @import "typography";
+
+@import "../bootstrap/scss/bootstrap";
+
+//
+// Alternate buttons
+//
+@each $color,
+$value in $theme-colors {
+    .btn-#{$color} a {
+        @include button-variant($value, $value);
+    }
+}
+
+@each $color,
+$value in $theme-colors {
+    .btn-outline-#{$color} a {
+        @include button-outline-variant($value);
+    }
+}
+
+
+
+
+
+
+
+
+
+
