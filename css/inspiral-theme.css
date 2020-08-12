@@ -2874,13 +2874,13 @@ readers do not read off random characters that represent icons */
 
 /* VARIABLES */
 /* TYPOGRAPHY */
-@font-face { font-family: "Philosopher-Regular"; src: url('../fonts/Philosopher-R.ttf?1592468448') format('truetype'), url('../fonts/Philosopher-R.woff?1592468448') format('woff'), url('../fonts/Philosopher-R.eot?1592468448') format('embedded-opentype'), url('../fonts/Philosopher-R.svg?1592468448') format('svg'); }
-@font-face { font-family: "Philosopher-Bold"; src: url('../fonts/Philosopher-B.ttf?1592468448') format('truetype'), url('../fonts/Philosopher-B.woff?1592468448') format('woff'), url('../fonts/Philosopher-B.eot?1592468448') format('embedded-opentype'), url('../fonts/Philosopher-B.svg?1592468448') format('svg'); }
-@font-face { font-family: "Ubuntu-Regular"; src: url('../fonts/Ubuntu-R.ttf?1592468448') format('truetype'), url('../fonts/Ubuntu-R.woff?1592468448') format('woff'), url('../fonts/Ubuntu-R.eot?1592468448') format('embedded-opentype'), url('../fonts/Ubuntu-R.svg?1592468448') format('svg'); }
-@font-face { font-family: "Ubuntu-Light"; src: url('../fonts/Ubuntu-L.ttf?1592468448') format('truetype'), url('../fonts/Ubuntu-L.woff?1592468448') format('woff'), url('../fonts/Ubuntu-L.eot?1592468448') format('embedded-opentype'), url('../fonts/Ubuntu-L.svg?1592468448') format('svg'); }
-@font-face { font-family: "Ubuntu-Bold"; src: url('../fonts/Ubuntu-B.ttf?1592468448') format('truetype'), url('../fonts/Ubuntu-B.woff?1592468448') format('woff'), url('../fonts/Ubuntu-B.eot?1592468448') format('embedded-opentype'), url('../fonts/Ubuntu-B.svg?1592468448') format('svg'); }
-@font-face { font-family: "Pyidaungsu-Regular"; src: url('../fonts/Pyidaungsu-1.8_Regular.ttf?1592468448') format('truetype'), url('../fonts/Pyidaungsu-1.8_Regular.woff?1592468448') format('woff'), url('../fonts/Pyidaungsu-1.8_Regular.eot?1592468448') format('embedded-opentype'), url('../fonts/Pyidaungsu-1.8_Regular.svg?1592468448') format('svg'); }
-@font-face { font-family: "Pyidaungsu-Bold"; src: url('../fonts/Pyidaungsu-1.8_Bold.ttf?1592468448') format('truetype'), url('../fonts/Pyidaungsu-1.8_Bold.woff?1592468448') format('woff'), url('../fonts/Pyidaungsu-1.8_Bold.eot?1592468448') format('embedded-opentype'), url('../fonts/Pyidaungsu-1.8_Bold.svg?1592468448') format('svg'); }
+@font-face { font-family: "Philosopher-Regular"; src: url('../fonts/Philosopher-R.ttf?1592470248') format('truetype'), url('../fonts/Philosopher-R.woff?1592470248') format('woff'), url('../fonts/Philosopher-R.eot?1592470248') format('embedded-opentype'), url('../fonts/Philosopher-R.svg?1592470248') format('svg'); }
+@font-face { font-family: "Philosopher-Bold"; src: url('../fonts/Philosopher-B.ttf?1592470248') format('truetype'), url('../fonts/Philosopher-B.woff?1592470248') format('woff'), url('../fonts/Philosopher-B.eot?1592470248') format('embedded-opentype'), url('../fonts/Philosopher-B.svg?1592470248') format('svg'); }
+@font-face { font-family: "Ubuntu-Regular"; src: url('../fonts/Ubuntu-R.ttf?1592470248') format('truetype'), url('../fonts/Ubuntu-R.woff?1592470248') format('woff'), url('../fonts/Ubuntu-R.eot?1592470248') format('embedded-opentype'), url('../fonts/Ubuntu-R.svg?1592470248') format('svg'); }
+@font-face { font-family: "Ubuntu-Light"; src: url('../fonts/Ubuntu-L.ttf?1592470248') format('truetype'), url('../fonts/Ubuntu-L.woff?1592470248') format('woff'), url('../fonts/Ubuntu-L.eot?1592470248') format('embedded-opentype'), url('../fonts/Ubuntu-L.svg?1592470248') format('svg'); }
+@font-face { font-family: "Ubuntu-Bold"; src: url('../fonts/Ubuntu-B.ttf?1592470248') format('truetype'), url('../fonts/Ubuntu-B.woff?1592470248') format('woff'), url('../fonts/Ubuntu-B.eot?1592470248') format('embedded-opentype'), url('../fonts/Ubuntu-B.svg?1592470248') format('svg'); }
+@font-face { font-family: "Pyidaungsu-Regular"; src: url('../fonts/Pyidaungsu-1.8_Regular.ttf?1592470248') format('truetype'), url('../fonts/Pyidaungsu-1.8_Regular.woff?1592470248') format('woff'), url('../fonts/Pyidaungsu-1.8_Regular.eot?1592470248') format('embedded-opentype'), url('../fonts/Pyidaungsu-1.8_Regular.svg?1592470248') format('svg'); }
+@font-face { font-family: "Pyidaungsu-Bold"; src: url('../fonts/Pyidaungsu-1.8_Bold.ttf?1592470248') format('truetype'), url('../fonts/Pyidaungsu-1.8_Bold.woff?1592470248') format('woff'), url('../fonts/Pyidaungsu-1.8_Bold.eot?1592470248') format('embedded-opentype'), url('../fonts/Pyidaungsu-1.8_Bold.svg?1592470248') format('svg'); }
 h1, h2 { font-family: NeurialGrotesk-Medium, "Pyidaungsu-Bold", "Arial", sans-serif; font-size: 48px; line-height: 56px; margin-bottom: 30px; color: #fff; }
 
 /* CUSTOM STARTS HERE
@@ -5568,7 +5568,7 @@ a.text-dark:hover, a.text-dark:focus { color: #121416 !important; }
 /*------- Golbal -----------*/
 html { box-sizing: border-box; font-size: 62.5%; /* 10px/16px = 62.5% ~> 1rem = 10px */ /* global font-size */ }
 
-body { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; font-size: 1.4rem; color: #070712; line-height: 23px; letter-spacing: 0.5px; }
+body { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; font-size: 1.4rem; color: #070712; line-height: 23px; letter-spacing: 0.5px; background: orangered; }
 body h1, body h2, body h3 { font-family: "Philosopher-Regular", "Pyidaungsu-Regular", "Arial", sans-serif; }
 body h1 { font-size: 4.4rem; line-height: 4.9rem; }
 body h2 { color: #ffffff; font-size: 3.5rem; line-height: 39px; }
