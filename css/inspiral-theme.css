@@ -5585,3 +5585,5 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 .col { padding-left: 0; padding-right: 0; }
 
 .ui-accordion { padding: 0; }
+
+.bg-secondary, .bg-primary { background-color: unset !important; }

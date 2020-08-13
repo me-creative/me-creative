@@ -58,3 +58,9 @@ div#block-inspiral-theme-page-title { @include d-none; }
     padding-right: 0;
 }
 .ui-accordion { padding: 0; }
+
+// Main Nav
+
+.bg-secondary, .bg-primary {
+    background-color: unset !important;
+}
