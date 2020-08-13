@@ -63,4 +63,27 @@ div#block-inspiral-theme-page-title { @include d-none; }
 
 .bg-secondary, .bg-primary {
     background-color: unset !important;
+    padding: 0;
+}
+
+// Header
+
+#header {
+    @include flexbox;
+    @include justify-content-around;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
+    img {
+        width: 10rem;
+    }
+    .bg-primary {
+        ul a {
+            color: $primary-color;
+            padding: 3rem !important;
+            font-size: 1.9rem;
+            &:hover {
+                background: $color-footer-p;
+                color: $color-white !important;
+            } 
+        }
+    }
 }
