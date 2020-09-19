@@ -1,0 +1,18 @@
+global-styling:
+  version: VERSION
+  js: 
+    js/popper.min.js: {}
+    js/bootstrap.min.js: {}
+    js/global.js: {}
+    js/inspiral_core.js: {}
+  css:
+      theme:
+        css/animate.css: {}
+        # css/inspiral-custom-print.css: { media: print }
+        # css/inspiral-custom.css: {}
+        css/me-creative.css: {}
+        css/responsive-custom.css: {}
+        
+  dependencies:
+    - core/jquery
+    - core/drupal
