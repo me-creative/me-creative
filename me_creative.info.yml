@@ -6,7 +6,7 @@ core: 8.x
 base theme: bootstrap_barrio
 
 libraries:
-  - inspiral_theme/global-styling
+  - me_creative/global-styling
 libraries-override:
   bootstrap_barrio/global-styling: false
 regions:
