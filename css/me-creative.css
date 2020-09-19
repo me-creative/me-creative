@@ -5566,7 +5566,7 @@ a.text-dark:hover, a.text-dark:focus { color: #121416 !important; }
 /*------- Golbal -----------*/
 html { box-sizing: border-box; font-size: 62.5%; /* 10px/16px = 62.5% ~> 1rem = 10px */ /* global font-size */ }
 
-body { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; font-size: 1.4rem; color: #070712; line-height: 23px; letter-spacing: 0.5px; background: #000; }
+body { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; font-size: 1.4rem; color: #070712; line-height: 23px; letter-spacing: 0.5px; }
 body h1, body h2, body h3 { font-family: "Philosopher-Regular", "Pyidaungsu-Regular", "Arial", sans-serif; }
 body h1 { font-size: 4.4rem; line-height: 4.9rem; }
 body h2 { color: #ffffff; font-size: 3.5rem; line-height: 39px; }
