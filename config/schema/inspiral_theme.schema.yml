@@ -1,5 +1,0 @@
-# Schema for the configuration files of the Bootstrap SASS Subtheme.
-
-inspiral_theme_bootstap.settings:
-  type: theme_settings
-  label: 'Bootstrap SASS Subtheme settings'
