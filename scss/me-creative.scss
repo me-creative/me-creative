@@ -80,6 +80,7 @@ div#block-inspiral-theme-page-title { @include d-none; }
     @include flexbox;
     @include justify-content-around;
     background: $primary-color;
+    padding: 2px 0;
     img {
         width: 10rem;
     }
@@ -116,5 +117,24 @@ div#block-inspiral-theme-page-title { @include d-none; }
         position: absolute;
         right: -15rem;
         top: 2.5rem;
+    }
+}
+
+// footer 
+
+.site-footer {
+    background: $secondary-color;
+    .region {
+        @include wrapper(1170px);
+        display: block;
+    }
+    .field {
+        @include flexbox;
+        @include justify-content-between;
+        padding: 20px 0;
+        p {
+            color: $color-white;
+            margin-bottom: 0;
+        }
     }
 }
