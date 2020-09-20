@@ -81,6 +81,10 @@ div#block-inspiral-theme-page-title { @include d-none; }
     @include flexbox;
     @include justify-content-around;
     background: $primary-color;
+    background: $primary-color url(../images/HomePageBGReadShape_PNG.png);
+    background-position: right -39px;
+    background-size: 30%;
+    background-repeat: no-repeat;
     padding: 2px 0;
     img {
         width: 10rem;
@@ -141,5 +145,20 @@ div#block-inspiral-theme-page-title { @include d-none; }
     &--img {
 
         @include flexbox;
+    }
+}
+
+// homepage
+
+#block-homepage {
+    background: $primary-color url(../images/HomePageBGReadShape_PNG.png);
+    background-size: cover;
+    background-position: right -12.5rem;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+    p {
+        width: 20%;
+        color: $color-white;
     }
 }
