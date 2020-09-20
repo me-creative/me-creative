@@ -5586,9 +5586,9 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 
 .ui-accordion { padding: 0; }
 
-.bg-secondary, .bg-primary { background-color: unset !important; padding: 0; }
+.navbar { padding: 0; }
+.navbar-collapse ul a { color: #ffffff; padding: 3rem !important; font-size: 1.9rem; }
+.navbar-collapse ul a:hover { border-bottom: 2px solid #e5191e; }
 
-#header { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2); }
+#header { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; background: #000000; }
 #header img { width: 10rem; }
-#header .bg-primary ul a { color: #F59300; padding: 3rem !important; font-size: 1.9rem; }
-#header .bg-primary ul a:hover { background: #BDBDBD; color: #ffffff !important; }

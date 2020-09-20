@@ -61,29 +61,26 @@ div#block-inspiral-theme-page-title { @include d-none; }
 
 // Main Nav
 
-.bg-secondary, .bg-primary {
-    background-color: unset !important;
+.navbar {
     padding: 0;
+    &-collapse {
+        ul a {
+            color: $color-white;
+            padding: 3rem !important;
+            font-size: 1.9rem;
+            &:hover {
+                border-bottom: 2px solid $nav-hover-color;
+            } 
+        }
+    } 
 }
-
 // Header
 
 #header {
     @include flexbox;
     @include justify-content-around;
-    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
+    background: $primary-color;
     img {
         width: 10rem;
-    }
-    .bg-primary {
-        ul a {
-            color: $primary-color;
-            padding: 3rem !important;
-            font-size: 1.9rem;
-            &:hover {
-                background: $color-footer-p;
-                color: $color-white !important;
-            } 
-        }
     }
 }
