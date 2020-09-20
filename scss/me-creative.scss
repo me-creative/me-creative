@@ -64,7 +64,7 @@ div#block-inspiral-theme-page-title { @include d-none; }
 .navbar {
     padding: 0;
     &-collapse {
-        ul a {
+        ul li.nav-item a {
             color: $color-white;
             padding: 3rem !important;
             font-size: 1.9rem;
@@ -82,5 +82,39 @@ div#block-inspiral-theme-page-title { @include d-none; }
     background: $primary-color;
     img {
         width: 10rem;
+    }
+}
+
+// featured-bottom (contact us)
+
+.featured-bottom {
+    background: $primary-color;
+    .region {
+        @include wrapper(1170px);
+        display: block;
+    }
+    .field {
+        @include flexbox;
+        @include justify-content-around;
+        padding: 4rem 0;
+    }
+}
+
+.contact-us {
+    position: relative;
+    p {
+        color: $color-white;
+    }
+    a {
+        color: $nav-hover-color;
+    }
+    &::after {
+        content: "";
+        width: 2px;
+        height: 15rem;
+        background: red;
+        position: absolute;
+        right: -15rem;
+        top: 2.5rem;
     }
 }
