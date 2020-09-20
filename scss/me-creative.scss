@@ -17,7 +17,10 @@ body {
     color: $p-color;
     line-height: 23px;
     letter-spacing: 0.5px;
-    background: url('../images/HomePageBGReadShape.svg');
+    background: $primary-color url('../images/HomePageBGReadShape_PNG.png');
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right 4.5rem;
     h1, h2, h3 { @include text-font-unicode-family("Philosopher-Regular"); }
     h1 { @include h1; }
     h2 { @include h2; }
@@ -80,11 +83,6 @@ div#block-inspiral-theme-page-title { @include d-none; }
 #header {
     @include flexbox;
     @include justify-content-around;
-    background: $primary-color;
-    background: $primary-color url(../images/HomePageBGReadShape_PNG.png);
-    background-position: right -39px;
-    background-size: 30%;
-    background-repeat: no-repeat;
     padding: 2px 0;
     img {
         width: 10rem;
@@ -151,14 +149,14 @@ div#block-inspiral-theme-page-title { @include d-none; }
 // homepage
 
 #block-homepage {
-    background: $primary-color url(../images/HomePageBGReadShape_PNG.png);
-    background-size: cover;
-    background-position: right -12.5rem;
-    background-size: 30%;
-    background-repeat: no-repeat;
-    padding: 4rem 0;
+    .field {
+        @include wrapper(1170px); 
+    }
     p {
         width: 20%;
         color: $color-white;
+    }
+    h2 {
+        font-size: $h1-font-size;
     }
 }
