@@ -17,6 +17,7 @@ body {
     color: $p-color;
     line-height: 23px;
     letter-spacing: 0.5px;
+    background: url('../images/HomePageBGReadShape.svg');
     h1, h2, h3 { @include text-font-unicode-family("Philosopher-Regular"); }
     h1 { @include h1; }
     h2 { @include h2; }
@@ -130,11 +131,15 @@ div#block-inspiral-theme-page-title { @include d-none; }
     }
     .field {
         @include flexbox;
-        @include justify-content-between;
+        @include justify-content-around;
         padding: 20px 0;
         p {
             color: $color-white;
             margin-bottom: 0;
         }
+    }
+    &--img {
+
+        @include flexbox;
     }
 }
