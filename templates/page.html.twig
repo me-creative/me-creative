@@ -69,9 +69,9 @@
 #}
 <div id="page-wrapper">
   <div id="page">
+  {{ page.top_header }} 
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
       {% block head %}
-      {{ page.top_header }}
         {% if page.secondary_menu or page.top_header or page.top_header_form %}
           <nav{{ navbar_top_attributes }}>
           {% if container_navbar %}
