@@ -163,6 +163,7 @@ div#block-inspiral-theme-page-title { @include d-none; }
         text-transform: uppercase;
     }
     p {
+        @include text-font-unicode-family("Ubuntu-Light");
         @extend %fa-icon;
         @extend .fas;
         width: 20%;
@@ -171,6 +172,7 @@ div#block-inspiral-theme-page-title { @include d-none; }
             content: fa-content($fa-var-quote-left);
         }
         &::after {
+            @include text-font-unicode-family("Font Awesome 5 Free");
             content: fa-content($fa-var-quote-right);
         }
     }
@@ -185,6 +187,7 @@ div#block-inspiral-theme-page-title { @include d-none; }
     p {
         color: $color-white;
         transition: all .5s;
+        cursor: pointer;
         &:hover {
             color: $secondary-color;
         }
