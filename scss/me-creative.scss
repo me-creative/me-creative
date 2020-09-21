@@ -20,7 +20,7 @@ body {
     background: $primary-color url('../images/HomePageBGReadShape_PNG.png');
     background-repeat: no-repeat;
     background-size: 30%;
-    background-position: right 4.5rem;
+    background-position: right top;
     h1, h2, h3 { @include text-font-unicode-family("Philosopher-Regular"); }
     h1 { @include h1; }
     h2 { @include h2; }
@@ -64,11 +64,15 @@ div#block-inspiral-theme-page-title { @include d-none; }
 .ui-accordion { padding: 0; }
 
 // block 
-
-.top-header .rgion {
+.top-header .region {
     display: block;
 }
 
+// Main Content 
+
+#main-wrapper .section {
+    @include wrapper(1170px);
+}
 // Main Nav
 
 .navbar {
@@ -147,23 +151,51 @@ div#block-inspiral-theme-page-title { @include d-none; }
         }
     }
     &--img {
-
         @include flexbox;
     }
 }
 
-// homepage
+// block-homepage
 
 #block-homepage {
-    .field {
-        @include wrapper(1170px); 
+    h1 {
+        margin-bottom: 0;
+        text-transform: uppercase;
     }
     p {
+        @extend %fa-icon;
+        @extend .fas;
         width: 20%;
         color: $color-white;
-    }
-    h2 {
-        font-size: $h1-font-size;
+        &::before {
+            content: fa-content($fa-var-quote-left);
+        }
+        &::after {
+            content: fa-content($fa-var-quote-right);
+        }
     }
 }
 
+// block-wepassionate
+
+#block-wepassionate {
+    h2 {
+        color: $secondary-color;
+    }
+    p {
+        color: $color-white;
+        transition: all .5s;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+.create{
+    &-wrap {
+        @include flexbox;
+    }
+    &-left {
+        margin-right: 5rem;
+    }
+}

@@ -6,7 +6,9 @@ Description: Bootstrap 4 with Sass
  * Font Awesome Free 5.10.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-.fa, .fas, .far, .fal, .fad, .fab { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
+.fa, .fas, #block-homepage p, .far, .fal, .fad, .fab { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
+
+#block-homepage p { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; display: inline-block; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; }
 
 .fa-lg { font-size: 1.33333em; line-height: 0.75em; vertical-align: -.0667em; }
 
@@ -47,8 +49,8 @@ Description: Bootstrap 4 with Sass
 
 .fa-pull-right { float: right; }
 
-.fa.fa-pull-left, .fas.fa-pull-left, .far.fa-pull-left, .fal.fa-pull-left, .fab.fa-pull-left { margin-right: .3em; }
-.fa.fa-pull-right, .fas.fa-pull-right, .far.fa-pull-right, .fal.fa-pull-right, .fab.fa-pull-right { margin-left: .3em; }
+.fa.fa-pull-left, .fas.fa-pull-left, #block-homepage p.fa-pull-left, .far.fa-pull-left, .fal.fa-pull-left, .fab.fa-pull-left { margin-right: .3em; }
+.fa.fa-pull-right, .fas.fa-pull-right, #block-homepage p.fa-pull-right, .far.fa-pull-right, .fal.fa-pull-right, .fab.fa-pull-right { margin-left: .3em; }
 
 .fa-spin { animation: fa-spin 2s infinite linear; }
 
@@ -2861,7 +2863,7 @@ readers do not read off random characters that represent icons */
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face { font-family: 'Font Awesome 5 Free'; font-style: normal; font-weight: 900; font-display: auto; src: url("../webfonts/fa-solid-900.eot"); src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
-.fa, .fas { font-family: 'Font Awesome 5 Free'; font-weight: 900; }
+.fa, .fas, #block-homepage p { font-family: 'Font Awesome 5 Free'; font-weight: 900; }
 
 /*!
  * Font Awesome Free 5.10.1 by @fontawesome - https://fontawesome.com
@@ -5566,7 +5568,7 @@ a.text-dark:hover, a.text-dark:focus { color: #121416 !important; }
 /*------- Golbal -----------*/
 html { box-sizing: border-box; font-size: 62.5%; /* 10px/16px = 62.5% ~> 1rem = 10px */ /* global font-size */ }
 
-body { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; font-size: 1.4rem; color: #070712; line-height: 23px; letter-spacing: 0.5px; background: #000000 url("../images/HomePageBGReadShape_PNG.png"); background-repeat: no-repeat; background-size: 30%; background-position: right 4.5rem; }
+body { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; font-size: 1.4rem; color: #070712; line-height: 23px; letter-spacing: 0.5px; background: #000000 url("../images/HomePageBGReadShape_PNG.png"); background-repeat: no-repeat; background-size: 30%; background-position: right top; }
 body h1, body h2, body h3 { font-family: "Philosopher-Regular", "Pyidaungsu-Regular", "Arial", sans-serif; }
 body h1 { font-size: 4.4rem; line-height: 4.9rem; }
 body h2 { color: #ffffff; font-size: 3.5rem; line-height: 39px; }
@@ -5586,7 +5588,9 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 
 .ui-accordion { padding: 0; }
 
-.top-header .rgion { display: block; }
+.top-header .region { display: block; }
+
+#main-wrapper .section { max-width: 1170px; margin: 0 auto; }
 
 .navbar { padding: 0; }
 .navbar-collapse ul li.nav-item a { color: #ffffff; padding: 3rem !important; font-size: 1.9rem; }
@@ -5610,6 +5614,14 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 .site-footer .field p { color: #ffffff; margin-bottom: 0; }
 .site-footer--img { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; }
 
-#block-homepage .field { max-width: 1170px; margin: 0 auto; }
+#block-homepage h1 { margin-bottom: 0; text-transform: uppercase; }
 #block-homepage p { width: 20%; color: #ffffff; }
-#block-homepage h2 { font-size: 4.4rem; }
+#block-homepage p::before { content: "\f10d"; }
+#block-homepage p::after { content: "\f10e"; }
+
+#block-wepassionate h2 { color: #e5191e; }
+#block-wepassionate p { color: #ffffff; transition: all .5s; }
+#block-wepassionate p:hover { color: #e5191e; }
+
+.create-wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; }
+.create-left { margin-right: 5rem; }
