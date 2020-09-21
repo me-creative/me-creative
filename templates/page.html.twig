@@ -69,7 +69,13 @@
 #}
 <div id="page-wrapper">
   <div id="page">
-  {{ page.top_header }} 
+  {% if page.top_header %}
+      <div class="highlighted">
+        <aside class="{{ container }} section clearfix" role="complementary">
+          {{ page.top_header }}
+        </aside>
+      </div>
+    {% endif %}
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
       {% block head %}
         {% if page.secondary_menu or page.top_header or page.top_header_form %}
