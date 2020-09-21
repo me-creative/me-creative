@@ -5586,6 +5586,8 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 
 .ui-accordion { padding: 0; }
 
+.top-header .rgion { display: block; }
+
 .navbar { padding: 0; }
 .navbar-collapse ul li.nav-item a { color: #ffffff; padding: 3rem !important; font-size: 1.9rem; }
 .navbar-collapse ul li.nav-item a:hover { border-bottom: 2px solid #e5191e; }

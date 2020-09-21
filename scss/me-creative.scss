@@ -63,6 +63,12 @@ div#block-inspiral-theme-page-title { @include d-none; }
 }
 .ui-accordion { padding: 0; }
 
+// block 
+
+.top-header .rgion {
+    display: block;
+}
+
 // Main Nav
 
 .navbar {
@@ -160,3 +166,4 @@ div#block-inspiral-theme-page-title { @include d-none; }
         font-size: $h1-font-size;
     }
 }
+
