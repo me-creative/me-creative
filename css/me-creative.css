@@ -5590,8 +5590,6 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 
 .top-header .region { display: block; }
 
-#main-wrapper .section { max-width: 1170px; margin: 0 auto; }
-
 .navbar { padding: 0; }
 .navbar-collapse ul li.nav-item a { color: #ffffff; padding: 3rem !important; font-size: 1.9rem; }
 .navbar-collapse ul li.nav-item a:hover { border-bottom: 2px solid #e5191e; }
@@ -5628,9 +5626,12 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 .create-left { margin-right: 5rem; }
 
 #block-services { background-image: url("../images/services-bg.jpg"); background-size: cover; background-repeat: no-repeat; }
-#block-services .services-wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; background: #000000; }
+#block-services .services { max-width: 1170px; margin: 0 auto; }
+#block-services .services-wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; }
 #block-services .services-wrap div:not(:last-child) { margin-right: 10rem; position: relative; }
 #block-services .services-wrap div:not(:last-child)::after { content: ""; width: 1px; height: 12rem; background: #e5191e; position: absolute; right: -44px; top: 19px; }
+#block-services .field { background: #000000; }
+#block-services .content { padding: 10rem 0; }
 #block-services h2 { color: #e5191e; }
 #block-services p { color: #ffffff; transition: all .5s; text-transform: capitalize; cursor: pointer; }
 #block-services p:hover { color: #e5191e; }

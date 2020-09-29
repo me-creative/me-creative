@@ -68,11 +68,6 @@ div#block-inspiral-theme-page-title { @include d-none; }
     display: block;
 }
 
-// Main Content 
-
-#main-wrapper .section {
-    @include wrapper(1170px);
-}
 // Main Nav
 
 .navbar {
@@ -212,23 +207,27 @@ div#block-inspiral-theme-page-title { @include d-none; }
     background-image: url('../images/services-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    .services-wrap {
-        @include flexbox;
-        background: $primary-color;
-        div:not(:last-child) {
-            margin-right: 10rem;
-            position: relative;
-            &::after {
-                content: "";
-                width: 1px;
-                height: 12rem;
-                background: $secondary-color;
-                position: absolute;
-                right: -44px;
-                top: 19px;
+    .services {
+        @include wrapper(1170px);
+        &-wrap {
+            @include flexbox;
+            div:not(:last-child) {
+                margin-right: 10rem;
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 12rem;
+                    background: $secondary-color;
+                    position: absolute;
+                    right: -44px;
+                    top: 19px;
+                }
             }
         }
     }
+    .field { background: $primary-color; }
+    .content { padding: 10rem 0; }
     h2 { color: $secondary-color; }
     p {
         color: $color-white;
