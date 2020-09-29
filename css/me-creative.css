@@ -5627,6 +5627,7 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 .create-wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; }
 .create-left { margin-right: 5rem; }
 
+#block-services .services-wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; }
 #block-services .services-wrap div:not(:last-child) { margin-right: 10rem; position: relative; }
 #block-services .services-wrap div:not(:last-child)::after { content: ""; width: 1px; height: 12rem; background: #e5191e; position: absolute; right: -44px; top: 19px; }
 #block-services h2 { color: #e5191e; }

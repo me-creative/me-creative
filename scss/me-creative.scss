@@ -209,17 +209,20 @@ div#block-inspiral-theme-page-title { @include d-none; }
 // block services
 
 #block-services {
-    .services-wrap div:not(:last-child) {
-        margin-right: 10rem;
-        position: relative;
-        &::after {
-            content: "";
-            width: 1px;
-            height: 12rem;
-            background: $secondary-color;
-            position: absolute;
-            right: -44px;
-            top: 19px;
+    .services-wrap {
+        @include flexbox;
+        div:not(:last-child) {
+            margin-right: 10rem;
+            position: relative;
+            &::after {
+                content: "";
+                width: 1px;
+                height: 12rem;
+                background: $secondary-color;
+                position: absolute;
+                right: -44px;
+                top: 19px;
+            }
         }
     }
     h2 { color: $secondary-color; }
