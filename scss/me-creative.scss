@@ -209,8 +209,12 @@ div#block-inspiral-theme-page-title { @include d-none; }
 // block services
 
 #block-services {
+    background-image: url('../images/services-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     .services-wrap {
         @include flexbox;
+        background: $primary-color;
         div:not(:last-child) {
             margin-right: 10rem;
             position: relative;
