@@ -229,6 +229,8 @@ div#block-inspiral-theme-page-title { @include d-none; }
     p {
         color: $color-white;
         transition: all .5s;
+        text-transform: capitalize;
+        cursor: pointer;
         &:hover {
             color: $secondary-color;
         }
