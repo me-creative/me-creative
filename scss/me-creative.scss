@@ -169,6 +169,7 @@ div#block-inspiral-theme-page-title { @include d-none; }
         width: 20%;
         color: $color-white;
         &::before {
+            @include text-font-unicode-family("Font Awesome 5 Free");
             content: fa-content($fa-var-quote-left);
         }
         &::after {
@@ -176,6 +177,7 @@ div#block-inspiral-theme-page-title { @include d-none; }
             content: fa-content($fa-var-quote-right);
         }
     }
+    svg { display: none; }
 }
 
 // block-wepassionate
@@ -200,5 +202,32 @@ div#block-inspiral-theme-page-title { @include d-none; }
     }
     &-left {
         margin-right: 5rem;
+    }
+}
+
+
+// block services
+
+#block-services {
+    .services-wrap div:not(:last-child) {
+        margin-right: 10rem;
+        position: relative;
+        &::after {
+            content: "";
+            width: 1px;
+            height: 12rem;
+            background: $secondary-color;
+            position: absolute;
+            right: -44px;
+            top: 19px;
+        }
+    }
+    h2 { color: $secondary-color; }
+    p {
+        color: $color-white;
+        transition: all .5s;
+        &:hover {
+            color: $secondary-color;
+        }
     }
 }
