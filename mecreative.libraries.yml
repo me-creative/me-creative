@@ -8,9 +8,9 @@ global-styling:
   css:
       theme:
         css/animate.css: {}
-        css/me-creative-custom-print.css: { media: print }
-        css/me-creative-custom.css: {}
-        css/me-creative.css: {}
+        # css/me-creative-custom-print.css: { media: print }
+        # css/me-creative-custom.css: {}
+        css/mecreative.css: {}
         css/responsive-custom.css: {}
         
   dependencies:
