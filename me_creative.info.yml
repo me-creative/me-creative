@@ -9,7 +9,7 @@ base theme: bootstrap_barrio
 #   - mecreative/global-styling
 libraries-extend:
   bootstrap/global-styling:
-    - mecreative/global-styling
+    - me_creative/global-styling
 libraries-override:
   bootstrap_barrio/global-styling: false
 regions:

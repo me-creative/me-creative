@@ -7,11 +7,11 @@ global-styling:
     js/mecretive_core.js: {}
   css:
       theme:
-        css/mecreative.css: {}
-        css/responsive-custom.css: {}
         css/animate.css: {}
-        css/mecreative-custom-print.css: { media: print }
-        css/mecreative-custom.css: {}
+        css/me_creative.css: {}
+        css/responsive-custom.css: {}
+        # css/mecreative-custom-print.css: { media: print }
+        # css/mecreative-custom.css: {}
         
   dependencies:
     - core/jquery
