@@ -5,8 +5,11 @@ type: theme
 core: 8.x
 base theme: bootstrap_barrio
 
-libraries:
-  - mecreative/global-styling
+# libraries:
+#   - mecreative/global-styling
+libraries-extend:
+  bootstrap/global-styling:
+    - mecreative/global-styling
 libraries-override:
   bootstrap_barrio/global-styling: false
 regions:
