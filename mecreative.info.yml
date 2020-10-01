@@ -3,6 +3,7 @@ name: "Media Earth"
 description: "SASS starter kit for a Bootstrap Barrio SubTheme."
 type: theme
 core: 8.x
+core_version_requirement: ^8.8 || ^9
 base theme: bootstrap_barrio
 
 libraries:
