@@ -77,9 +77,20 @@ div#block-inspiral-theme-page-title { @include d-none; }
             color: $color-white;
             padding: 3rem !important;
             font-size: 1.9rem;
-            &:hover {
-                border-bottom: 2px solid $nav-hover-color;
-            } 
+            position: relative;
+            &::after {
+                content: "";
+                background: $secondary-color;
+                width: $one-column-width;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                opacity: 0;
+            }
+            &:hover::after {
+                opacity: 1;
+            }
         }
     } 
 }
@@ -153,6 +164,7 @@ div#block-inspiral-theme-page-title { @include d-none; }
 // block-homepage
 
 #block-homepage {
+    @include wrapper(1170px);
     h1 {
         margin-bottom: 0;
         text-transform: uppercase;
@@ -178,6 +190,7 @@ div#block-inspiral-theme-page-title { @include d-none; }
 // block-wepassionate
 
 #block-wepassionate {
+    @include wrapper(1170px);
     h2 {
         color: $secondary-color;
     }
@@ -231,7 +244,7 @@ div#block-inspiral-theme-page-title { @include d-none; }
     h2 { color: $secondary-color; }
     p {
         color: $color-white;
-        transition: all .5s;
+        transition: all .5s; 
         text-transform: capitalize;
         cursor: pointer;
         &:hover {
