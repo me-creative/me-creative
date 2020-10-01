@@ -7,8 +7,7 @@ base theme: bootstrap_barrio
 
 # libraries:
 #   - mecreative/global-styling
-libraries-extend:
-  bootstrap/global-styling:
+libraries:
     - me_creative/global-styling
 libraries-override:
   bootstrap_barrio/global-styling: false
