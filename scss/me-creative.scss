@@ -143,22 +143,24 @@ div#block-inspiral-theme-page-title { @include d-none; }
 
 .site-footer {
     background: $secondary-color;
-    .region {
-        @include wrapper(1170px);
-        display: block;
-    }
     .field {
-        @include flexbox;
-        @include justify-content-around;
-        padding: 20px 0;
+        padding: 15px 20px;
         p {
             color: $color-white;
             margin-bottom: 0;
         }
     }
-    &--img {
-        @include flexbox;
+    &--text, &--img {
+        display: inline-block;
+        vertical-align: middle;
     }
+    &--img {
+        float: right;
+        p {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    } 
 }
 
 // block-homepage
@@ -197,7 +199,6 @@ div#block-inspiral-theme-page-title { @include d-none; }
     p {
         color: $color-white;
         transition: all .5s;
-        cursor: pointer;
         &:hover {
             color: $secondary-color;
         }
@@ -246,7 +247,6 @@ div#block-inspiral-theme-page-title { @include d-none; }
         color: $color-white;
         transition: all .5s; 
         text-transform: capitalize;
-        cursor: pointer;
         &:hover {
             color: $secondary-color;
         }
