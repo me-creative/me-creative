@@ -78,6 +78,15 @@ div#block-inspiral-theme-page-title { @include d-none; }
             padding: 3rem !important;
             font-size: 1.9rem;
             position: relative;
+            &.is-active::before {
+                content: "";
+                background: $secondary-color;
+                width: $one-column-width;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
             &::after {
                 content: "";
                 background: $secondary-color;
@@ -92,7 +101,7 @@ div#block-inspiral-theme-page-title { @include d-none; }
                 opacity: 1;
             }
         }
-    } 
+    }  
 }
 // Header
 
@@ -143,6 +152,9 @@ div#block-inspiral-theme-page-title { @include d-none; }
 
 .site-footer {
     background: $secondary-color;
+    .region {
+        display: block;
+    }
     .field {
         padding: 15px 20px;
         p {
