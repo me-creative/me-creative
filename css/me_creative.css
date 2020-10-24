@@ -5604,7 +5604,8 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 
 .contact-us { position: relative; }
 .contact-us p { color: #ffffff; }
-.contact-us a { color: #e5191e; }
+.contact-us a { color: #ffffff; }
+.contact-us a:hover { color: #e5191e; }
 .contact-us::after { content: ""; width: 2px; height: 15rem; background: red; position: absolute; right: -15rem; top: 2.5rem; }
 
 .site-footer { background: #e5191e; }
@@ -5624,7 +5625,7 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 
 #block-wepassionate { max-width: 1170px; margin: 0 auto; }
 #block-wepassionate h2 { color: #e5191e; }
-#block-wepassionate p { color: #ffffff; transition: all .5s; }
+#block-wepassionate p { color: #ffffff; transition: all 0.5s; }
 #block-wepassionate p:hover { color: #e5191e; }
 
 .create-wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; }
@@ -5638,5 +5639,5 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 #block-services .field { background: #000000; }
 #block-services .content { padding: 10rem 0; }
 #block-services h2 { color: #e5191e; }
-#block-services p { color: #ffffff; transition: all .5s; text-transform: capitalize; }
+#block-services p { color: #ffffff; transition: all 0.5s; text-transform: capitalize; }
 #block-services p:hover { color: #e5191e; }

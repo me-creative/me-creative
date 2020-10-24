@@ -7,251 +7,281 @@ Description: Bootstrap 4 with Sass
 /*------- Golbal -----------*/
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; /* 10px/16px = 62.5% ~> 1rem = 10px */ /* global font-size */
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px/16px = 62.5% ~> 1rem = 10px */ /* global font-size */
 }
 
 body {
-    @include text-font-unicode-family("Ubuntu-Light");
-    font-size: $p-font-size;
-    color: $p-color;
-    line-height: 23px;
-    letter-spacing: 0.5px;
-    background: $primary-color url('../images/HomePageBGReadShape_PNG.png');
-    background-repeat: no-repeat;
-    background-size: 30%;
-    background-position: right top;
-    h1, h2, h3 { @include text-font-unicode-family("Philosopher-Regular"); }
-    h1 { @include h1; }
-    h2 { @include h2; }
-    h3 { @include h3; }
-    h5 { @include h5; }
-    ul { list-style: none; }
-    a:hover {
-        text-decoration: none;
-    }
-    span.ext:empty, span.mailto {
-        @include d-none;
-    }
-    strong {
-        @include text-font-title-unicode-family("Ubuntu-Bold");
-    }
-    img {
-        width: $one-column-width;
-    }
+  @include text-font-unicode-family("Ubuntu-Light");
+  font-size: $p-font-size;
+  color: $p-color;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  background: $primary-color url("../images/HomePageBGReadShape_PNG.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: right top;
+  h1,
+  h2,
+  h3 {
+    @include text-font-unicode-family("Philosopher-Regular");
+  }
+  h1 {
+    @include h1;
+  }
+  h2 {
+    @include h2;
+  }
+  h3 {
+    @include h3;
+  }
+  h5 {
+    @include h5;
+  }
+  ul {
+    list-style: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  span.ext:empty,
+  span.mailto {
+    @include d-none;
+  }
+  strong {
+    @include text-font-title-unicode-family("Ubuntu-Bold");
+  }
+  img {
+    width: $one-column-width;
+  }
 }
 %align-center {
-    max-width: 117rem;
-    margin: 0 auto;
+  max-width: 117rem;
+  margin: 0 auto;
 }
 %fontawesome-solid {
-    @extend %fa-icon;
-    @extend .fas;
+  @extend %fa-icon;
+  @extend .fas;
 }
 .container {
-    max-width: inherit;
+  max-width: inherit;
 }
 
-div#panels-ipe-content, 
-div#panels-ipe-tray, 
+div#panels-ipe-content,
+div#panels-ipe-tray,
 .item-list,
 .bs-1col .bs-region .block-block-content,
-div#block-inspiral-theme-page-title { @include d-none; }
-.col {
-    padding-left: 0;
-    padding-right: 0;
+div#block-inspiral-theme-page-title {
+  @include d-none;
 }
-.ui-accordion { padding: 0; }
+.col {
+  padding-left: 0;
+  padding-right: 0;
+}
+.ui-accordion {
+  padding: 0;
+}
 
-// block 
+// block
 .top-header .region {
-    display: block;
+  display: block;
 }
 
 // Main Nav
 
 .navbar {
-    padding: 0;
-    &-collapse {
-        ul li.nav-item a {
-            color: $color-white;
-            padding: 3rem !important;
-            font-size: 1.9rem;
-            position: relative;
-            &::after {
-                content: "";
-                background: $secondary-color;
-                width: $one-column-width;
-                height: 2px;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                opacity: 0;
-            }
-            &:hover::after {
-                opacity: 1;
-            }
-        }
-    }  
+  padding: 0;
+  &-collapse {
+    ul li.nav-item a {
+      color: $color-white;
+      padding: 3rem !important;
+      font-size: 1.9rem;
+      position: relative;
+      &::after {
+        content: "";
+        background: $secondary-color;
+        width: $one-column-width;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
 }
 // Header
 
 #header {
-    @include flexbox;
-    @include justify-content-around;
-    padding: 2px 0;
-    img {
-        width: 10rem;
-    }
+  @include flexbox;
+  @include justify-content-around;
+  padding: 2px 0;
+  img {
+    width: 10rem;
+  }
 }
 
 // featured-bottom (contact us)
 
 .featured-bottom {
-    background: $primary-color;
-    .region {
-        @include wrapper(1170px);
-        display: block;
-    }
-    .field {
-        @include flexbox;
-        @include justify-content-around;
-        padding: 4rem 0;
-    }
+  background: $primary-color;
+  .region {
+    @include wrapper(1170px);
+    display: block;
+  }
+  .field {
+    @include flexbox;
+    @include justify-content-around;
+    padding: 4rem 0;
+  }
 }
 
 .contact-us {
-    position: relative;
-    p {
-        color: $color-white;
+  position: relative;
+  p {
+    color: $color-white;
+  }
+  a {
+    color: $color-white;
+    &:hover {
+      color: $nav-hover-color;
     }
-    a {
-        color: $nav-hover-color;
-    }
-    &::after {
-        content: "";
-        width: 2px;
-        height: 15rem;
-        background: red;
-        position: absolute;
-        right: -15rem;
-        top: 2.5rem;
-    }
+  }
+  &::after {
+    content: "";
+    width: 2px;
+    height: 15rem;
+    background: red;
+    position: absolute;
+    right: -15rem;
+    top: 2.5rem;
+  }
 }
 
-// footer 
+// footer
 
 .site-footer {
-    background: $secondary-color;
-    .region {
-        display: block;
+  background: $secondary-color;
+  .region {
+    display: block;
+  }
+  .field {
+    padding: 15px 20px;
+    p {
+      color: $color-white;
+      margin-bottom: 0;
     }
-    .field {
-        padding: 15px 20px;
-        p {
-            color: $color-white;
-            margin-bottom: 0;
-        }
+  }
+  &--text,
+  &--img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &--img {
+    float: right;
+    p {
+      display: inline-block;
+      vertical-align: middle;
     }
-    &--text, &--img {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    &--img {
-        float: right;
-        p {
-            display: inline-block;
-            vertical-align: middle;
-        }
-    } 
+  }
 }
 
 // block-homepage
 
 #block-homepage {
-    @include wrapper(1170px);
-    h1 {
-        margin-bottom: 0;
-        text-transform: uppercase;
+  @include wrapper(1170px);
+  h1 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  p {
+    @include text-font-unicode-family("Ubuntu-Light");
+    @extend %fa-icon;
+    @extend .fas;
+    width: 20%;
+    color: $color-white;
+    &::before {
+      @include text-font-unicode-family("Font Awesome 5 Free");
+      content: fa-content($fa-var-quote-left);
     }
-    p {
-        @include text-font-unicode-family("Ubuntu-Light");
-        @extend %fa-icon;
-        @extend .fas;
-        width: 20%;
-        color: $color-white;
-        &::before {
-            @include text-font-unicode-family("Font Awesome 5 Free");
-            content: fa-content($fa-var-quote-left);
-        }
-        &::after {
-            @include text-font-unicode-family("Font Awesome 5 Free");
-            content: fa-content($fa-var-quote-right);
-        }
+    &::after {
+      @include text-font-unicode-family("Font Awesome 5 Free");
+      content: fa-content($fa-var-quote-right);
     }
-    svg { display: none; }
+  }
+  svg {
+    display: none;
+  }
 }
 
 // block-wepassionate
 
 #block-wepassionate {
-    @include wrapper(1170px);
-    h2 {
-        color: $secondary-color;
+  @include wrapper(1170px);
+  h2 {
+    color: $secondary-color;
+  }
+  p {
+    color: $color-white;
+    transition: all 0.5s;
+    &:hover {
+      color: $secondary-color;
     }
-    p {
-        color: $color-white;
-        transition: all .5s;
-        &:hover {
-            color: $secondary-color;
-        }
-    }
+  }
 }
 
-.create{
-    &-wrap {
-        @include flexbox;
-    }
-    &-left {
-        margin-right: 5rem;
-    }
+.create {
+  &-wrap {
+    @include flexbox;
+  }
+  &-left {
+    margin-right: 5rem;
+  }
 }
-
 
 // block services
 
 #block-services {
-    background-image: url('../images/services-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    .services {
-        @include wrapper(1170px);
-        &-wrap {
-            @include flexbox;
-            div:not(:last-child) {
-                margin-right: 10rem;
-                position: relative;
-                &::after {
-                    content: "";
-                    width: 1px;
-                    height: 12rem;
-                    background: $secondary-color;
-                    position: absolute;
-                    right: -44px;
-                    top: 19px;
-                }
-            }
+  background-image: url("../images/services-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .services {
+    @include wrapper(1170px);
+    &-wrap {
+      @include flexbox;
+      div:not(:last-child) {
+        margin-right: 10rem;
+        position: relative;
+        &::after {
+          content: "";
+          width: 1px;
+          height: 12rem;
+          background: $secondary-color;
+          position: absolute;
+          right: -44px;
+          top: 19px;
         }
+      }
     }
-    .field { background: $primary-color; }
-    .content { padding: 10rem 0; }
-    h2 { color: $secondary-color; }
-    p {
-        color: $color-white;
-        transition: all .5s; 
-        text-transform: capitalize;
-        &:hover {
-            color: $secondary-color;
-        }
+  }
+  .field {
+    background: $primary-color;
+  }
+  .content {
+    padding: 10rem 0;
+  }
+  h2 {
+    color: $secondary-color;
+  }
+  p {
+    color: $color-white;
+    transition: all 0.5s;
+    text-transform: capitalize;
+    &:hover {
+      color: $secondary-color;
     }
+  }
 }
