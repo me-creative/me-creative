@@ -100,22 +100,23 @@ div#block-inspiral-theme-page-title {
       color: $color-white;
       padding: 3rem !important;
       font-size: 1.9rem;
+      display: block;
+      overflow: hidden;
       position: relative;
-      transition: all 0.5s;
-      &::after {
+      transition: all 0.7s;
+      &::before {
         content: "";
-        background: $secondary-color;
-        width: $one-column-width;
-        height: 2px;
+        width: 60px;
         position: absolute;
+        border-bottom: 2px solid $secondary-color;
         bottom: 0;
-        left: 0;
-        opacity: 0;
+        right: 350px;
+        transition: all 0.7s;
       }
       &:hover {
         color: $secondary-color;
-        &::after {
-          opacity: 1;
+        &::before {
+          right: 0;
         }
       }
     }
