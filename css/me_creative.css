@@ -5580,6 +5580,8 @@ body span.ext:empty, body span.mailto { display: none; }
 body strong { font-family: "Ubuntu-Bold", "Pyidaungsu-Bold", "Arial", sans-serif; }
 body img { width: 100%; }
 
+.section { margin-left: 10px; margin-right: 10px; }
+
 .container { max-width: inherit; }
 
 div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .block-block-content, div#block-inspiral-theme-page-title { display: none; }
@@ -5591,8 +5593,9 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 .top-header .region { display: block; }
 
 .navbar { padding: 0; }
-.navbar-collapse ul li.nav-item a { color: #ffffff; padding: 3rem !important; font-size: 1.9rem; position: relative; }
+.navbar-collapse ul li.nav-item a { color: #ffffff; padding: 3rem !important; font-size: 1.9rem; position: relative; transition: all 0.5s; }
 .navbar-collapse ul li.nav-item a::after { content: ""; background: #e5191e; width: 100%; height: 2px; position: absolute; bottom: 0; left: 0; opacity: 0; }
+.navbar-collapse ul li.nav-item a:hover { color: #e5191e; }
 .navbar-collapse ul li.nav-item a:hover::after { opacity: 1; }
 
 #header { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; padding: 2px 0; }
@@ -5604,13 +5607,13 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 
 .contact-us { position: relative; }
 .contact-us p { color: #ffffff; }
-.contact-us a { color: #ffffff; }
+.contact-us a { color: #ffffff; transition: all 0.5s; }
 .contact-us a:hover { color: #e5191e; }
 .contact-us::after { content: ""; width: 2px; height: 15rem; background: red; position: absolute; right: -15rem; top: 2.5rem; }
 
 .site-footer { background: #e5191e; }
 .site-footer .region { display: block; }
-.site-footer .field { padding: 15px 20px; }
+.site-footer .field { padding: 15px 10px; }
 .site-footer .field p { color: #ffffff; margin-bottom: 0; }
 .site-footer--text, .site-footer--img { display: inline-block; vertical-align: middle; }
 .site-footer--img { float: right; }
