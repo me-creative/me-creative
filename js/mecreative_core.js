@@ -87,22 +87,27 @@ jQuery(document).ready(function() {
   //event.preventdefault() for home page loading
   jQuery('#navbar-main li#id-2').on('click touchstart', function(event) {
     jQuery('html,body').stop().animate({
-    scrollTop: jQuery("#block-quicktabsoffer").offset().top - jQuery('#header').height()}, 800);
+    scrollTop: jQuery("#block-homepage").offset().top - jQuery('#header').height()}, 800);
     event.preventDefault();
   });
   jQuery('#navbar-main li#id-3').on('click touchstart', function(event) {
     jQuery('html,body').stop().animate({
-    scrollTop: jQuery("#block-views-block-image-quote-block-img-blog").offset().top - jQuery('#header').height()}, 1000);
+    scrollTop: jQuery("#block-wepassionate").offset().top - jQuery('#header').height()}, 1000);
     event.preventDefault();
   });
   jQuery('#navbar-main li#id-4').on('click touchstart', function(event) {
     jQuery('html,body').stop().animate({
-    scrollTop: jQuery("#rates").offset().top - jQuery('#header').height()}, 1500);
+    scrollTop: jQuery("#block-services").offset().top - jQuery('#header').height()}, 1500);
     event.preventDefault();
   });
+  jQuery('#navbar-main li#id-4').on('click touchstart', function(event) {
+    jQuery('html,body').stop().animate({
+      scrollTop: jQuery("#block-views-block-testing-video-slider-block-1").offset().top}, 1700);
+      event.preventDefault();
+    });
   jQuery('#navbar-main li#id-5').on('click touchstart', function(event) {
     jQuery('html,body').stop().animate({
-    scrollTop: jQuery("#contact-us").offset().top - jQuery('#header').height()}, 1700);
+    scrollTop: jQuery("#contact-us").offset().top - jQuery('#header').height()}, 1900);
     event.preventDefault();
   });
   // if (jQuery(window).width() < 992) {
