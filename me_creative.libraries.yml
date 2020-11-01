@@ -1,18 +1,18 @@
 global-styling:
   version: VERSION
-  js: 
+  js:
     js/popper.min.js: {}
     js/bootstrap.min.js: {}
     js/global.js: {}
-    js/mecretive_core.js: {}
+    js/mecreative_core.js: {}
   css:
-      theme:
-        css/animate.css: {}
-        css/me_creative.css: {}
-        css/responsive-custom.css: {}
-        # css/mecreative-custom-print.css: { media: print }
-        # css/mecreative-custom.css: {}
-        
+    theme:
+      css/animate.css: {}
+      css/me_creative.css: {}
+      css/responsive-custom.css: {}
+      # css/mecreative-custom-print.css: { media: print }
+      # css/mecreative-custom.css: {}
+
   dependencies:
     - core/jquery
     - core/drupal
