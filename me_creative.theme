@@ -12,7 +12,7 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * Replace Barrio setting options with subtheme ones.
  */
-function me_creative_theme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+function me_creative_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
   $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
       'bg-primary' => t('Primary'),
       'bg-secondary' => t('Secondary'),
@@ -31,7 +31,7 @@ function me_creative_theme_form_system_theme_settings_alter(&$form, FormStateInt
   );
 }
 
-function me_creative_theme_preprocess_menu(array &$variables) {
+function me_creative_preprocess_menu(array &$variables) {
   $id = 0;
   foreach ($variables['items'] as $key => $item) {
     $attribute = &$variables['items'][$key]['attributes'];
