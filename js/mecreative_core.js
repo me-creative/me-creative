@@ -115,19 +115,24 @@ jQuery(document).ready(function() {
   if (jQuery(window).width() < 1024) {
     jQuery('#navbar-main li#id-2').on('click touchstart', function(event) {
     jQuery('html,body').stop().animate({
-      scrollTop: jQuery("#block-quicktabsofferaccordion").offset().top}, 1000);
+      scrollTop: jQuery("#block-homepage").offset().top}, 1000);
       event.preventDefault();
     });
     jQuery('#navbar-main li#id-3').on('click touchstart', function(event) {
     jQuery('html,body').stop().animate({
-      scrollTop: jQuery("#block-views-block-image-quote-block-img-blog").offset().top}, 1000);
+      scrollTop: jQuery("#block-wepassionate").offset().top}, 1000);
       event.preventDefault();
     });
     jQuery('#navbar-main li#id-4').on('click touchstart', function(event) {
     jQuery('html,body').stop().animate({
-      scrollTop: jQuery("#rates").offset().top}, 1700);
+      scrollTop: jQuery("#block-services").offset().top}, 1700);
       event.preventDefault();
     });
+    jQuery('#navbar-main li#id-4').on('click touchstart', function(event) {
+      jQuery('html,body').stop().animate({
+        scrollTop: jQuery("#block-views-block-testing-video-slider-block-1").offset().top}, 1700);
+        event.preventDefault();
+      });
     jQuery('#navbar-main li#id-5').on('click touchstart', function(event) {
     jQuery('html,body').stop().animate({
       scrollTop: jQuery("#contact-us").offset().top}, 2000);
