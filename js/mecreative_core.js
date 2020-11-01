@@ -85,31 +85,26 @@ jQuery(document).ready(function() {
   });
 
   //event.preventdefault() for home page loading
-  jQuery('#navbar-main li#id-2').on('click touchstart', function(event) {
-    jQuery('html,body').stop().animate({
-    scrollTop: jQuery("#block-homepage").offset().top - jQuery('#header').height()}, 800);
-    event.preventDefault();
-  });
-  jQuery('#navbar-main li#id-3').on('click touchstart', function(event) {
-    jQuery('html,body').stop().animate({
-    scrollTop: jQuery("#block-wepassionate").offset().top - jQuery('#header').height()}, 1000);
-    event.preventDefault();
-  });
-  jQuery('#navbar-main li#id-4').on('click touchstart', function(event) {
-    jQuery('html,body').stop().animate({
-    scrollTop: jQuery("#block-services").offset().top - jQuery('#header').height()}, 1500);
-    event.preventDefault();
-  });
-  jQuery('#navbar-main li#id-4').on('click touchstart', function(event) {
-    jQuery('html,body').stop().animate({
-      scrollTop: jQuery("#block-views-block-testing-video-slider-block-1").offset().top}, 1700);
-      event.preventDefault();
-    });
-  jQuery('#navbar-main li#id-5').on('click touchstart', function(event) {
-    jQuery('html,body').stop().animate({
-    scrollTop: jQuery("#contact-us").offset().top - jQuery('#header').height()}, 1900);
-    event.preventDefault();
-  });
+  // jQuery('#navbar-main li#id-2').on('click touchstart', function(event) {
+  //   jQuery('html,body').stop().animate({
+  //   scrollTop: jQuery("#block-wepassionate").offset().top - jQuery('#header').height()}, 800);
+  //   event.preventDefault();
+  // });
+  // jQuery('#navbar-main li#id-3').on('click touchstart', function(event) {
+  //   jQuery('html,body').stop().animate({
+  //   scrollTop: jQuery("#block-services").offset().top - jQuery('#header').height()}, 1000);
+  //   event.preventDefault();
+  // });
+  // jQuery('#navbar-main li#id-4').on('click touchstart', function(event) {
+  //   jQuery('html,body').stop().animate({
+  //   scrollTop: jQuery("#block-views-block-testing-video-slider-block-1").offset().top - jQuery('#header').height()}, 1500);
+  //   event.preventDefault();
+  // });
+  // jQuery('#navbar-main li#id-5').on('click touchstart', function(event) {
+  //   jQuery('html,body').stop().animate({
+  //     scrollTop: jQuery("#contact-us").offset().top}, 1700);
+  //     event.preventDefault();
+  //   });
   // if (jQuery(window).width() < 992) {
   //   jQuery('.navbar-we-mega-menu').css('display', 'none');
   //   jQuery(".navbar-toggle").click(function() {
@@ -117,32 +112,28 @@ jQuery(document).ready(function() {
   //   });
   // }
 
+  // Home page animation slide up and down loading
   if (jQuery(window).width() < 1024) {
     jQuery('#navbar-main li#id-2').on('click touchstart', function(event) {
-    jQuery('html,body').stop().animate({
-      scrollTop: jQuery("#block-homepage").offset().top}, 1000);
+      jQuery('html,body').stop().animate({
+      scrollTop: jQuery("#block-wepassionate").offset().top - jQuery('#header').height()}, 800);
       event.preventDefault();
     });
     jQuery('#navbar-main li#id-3').on('click touchstart', function(event) {
-    jQuery('html,body').stop().animate({
-      scrollTop: jQuery("#block-wepassionate").offset().top}, 1000);
-      event.preventDefault();
-    });
-    jQuery('#navbar-main li#id-4').on('click touchstart', function(event) {
-    jQuery('html,body').stop().animate({
-      scrollTop: jQuery("#block-services").offset().top}, 1700);
+      jQuery('html,body').stop().animate({
+      scrollTop: jQuery("#block-services").offset().top - jQuery('#header').height()}, 1000);
       event.preventDefault();
     });
     jQuery('#navbar-main li#id-4').on('click touchstart', function(event) {
       jQuery('html,body').stop().animate({
-        scrollTop: jQuery("#block-views-block-testing-video-slider-block-1").offset().top}, 1700);
+      scrollTop: jQuery("#block-views-block-testing-video-slider-block-1").offset().top - jQuery('#header').height()}, 1500);
+      event.preventDefault();
+    });
+    jQuery('#navbar-main li#id-5').on('click touchstart', function(event) {
+      jQuery('html,body').stop().animate({
+        scrollTop: jQuery("#contact-us").offset().top}, 1700);
         event.preventDefault();
       });
-    jQuery('#navbar-main li#id-5').on('click touchstart', function(event) {
-    jQuery('html,body').stop().animate({
-      scrollTop: jQuery("#contact-us").offset().top}, 2000);
-      event.preventDefault();
-  });
   }
 });
 
