@@ -112,27 +112,27 @@ jQuery(document).ready(function() {
   //   });
   // }
 
-  if (jQuery(window).width() < 1024) {
-    jQuery('#navbar-main li#id-2').on('click touchstart', function(event) {
-    jQuery('html,body').stop().animate({
-      scrollTop: jQuery("#block-wepassionate").offset().top}, 800);
-      event.preventDefault();
-    });
-    jQuery('#navbar-main li#id-3').on('click touchstart', function(event) {
-    jQuery('html,body').stop().animate({
-      scrollTop: jQuery("#block-services").offset().top}, 1000);
-      event.preventDefault();
-    });
-    jQuery('#navbar-main li#id-4').on('click touchstart', function(event) {
-    jQuery('html,body').stop().animate({
-      scrollTop: jQuery("#block-views-block-testing-video-slider-block-1").offset().top}, 1500);
-      event.preventDefault();
-    });
-    jQuery('#navbar-main li#id-5').on('click touchstart', function(event) {
-    jQuery('html,body').stop().animate({
-      scrollTop: jQuery("#contact-us").offset().top}, 1700);
-      event.preventDefault();
-    });
-  }
+  // if (jQuery(window).width() < 1024) {
+  //   jQuery('#navbar-main li#id-2').on('click touchstart', function(event) {
+  //   jQuery('html,body').stop().animate({
+  //     scrollTop: jQuery("#block-wepassionate").offset().top}, 800);
+  //     event.preventDefault();
+  //   });
+  //   jQuery('#navbar-main li#id-3').on('click touchstart', function(event) {
+  //   jQuery('html,body').stop().animate({
+  //     scrollTop: jQuery("#block-services").offset().top}, 1000);
+  //     event.preventDefault();
+  //   });
+  //   jQuery('#navbar-main li#id-4').on('click touchstart', function(event) {
+  //   jQuery('html,body').stop().animate({
+  //     scrollTop: jQuery("#block-views-block-testing-video-slider-block-1").offset().top}, 1500);
+  //     event.preventDefault();
+  //   });
+  //   jQuery('#navbar-main li#id-5').on('click touchstart', function(event) {
+  //   jQuery('html,body').stop().animate({
+  //     scrollTop: jQuery("#contact-us").offset().top}, 1700);
+  //     event.preventDefault();
+  //   });
+  // }
 });
 
