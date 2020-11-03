@@ -67,7 +67,9 @@ body {
 .container {
   max-width: inherit;
 }
-
+.user-guide {
+  @include d-none;
+}
 div#panels-ipe-content,
 div#panels-ipe-tray,
 .item-list,
@@ -85,7 +87,7 @@ div#block-inspiral-theme-page-title {
 
 // block
 .top-header .region {
-  display: block;
+  @include d-none;
 }
 
 // Main Nav
@@ -220,7 +222,7 @@ div#block-inspiral-theme-page-title {
     }
   }
   svg {
-    display: none;
+    @include d-none;
   }
 }
 
