@@ -201,7 +201,7 @@ div#block-inspiral-theme-page-title {
 // block-homepage
 
 #block-homepage {
-  @include wrapper(1170px);
+  @include wrapper(960px);
   h1 {
     margin-bottom: 0;
     text-transform: uppercase;
@@ -229,7 +229,7 @@ div#block-inspiral-theme-page-title {
 // block-wepassionate
 
 #block-wepassionate {
-  @include wrapper(1170px);
+  @include wrapper(960px);
   h2 {
     color: $secondary-color;
   }
@@ -258,7 +258,7 @@ div#block-inspiral-theme-page-title {
   background-size: cover;
   background-repeat: no-repeat;
   .services {
-    @include wrapper(1170px);
+    @include wrapper(960px);
     &-wrap {
       @include flexbox;
       div:not(:last-child) {
