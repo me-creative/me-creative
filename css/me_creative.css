@@ -5620,8 +5620,8 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 .site-footer--img p { display: inline-block; vertical-align: middle; }
 
 #block-homepage { max-width: 960px; margin: 0 auto; }
-#block-homepage h1 { margin-bottom: 0; text-transform: uppercase; font-size: 4.8rem; margin-bottom: 1.5rem; }
-#block-homepage p { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; font-size: 18px; width: 20%; line-height: 3.2rem; letter-spacing: 0.15rem; color: #ffffff; }
+#block-homepage h1 { margin-bottom: 0; text-transform: uppercase; font-size: 4.8rem; margin-bottom: 2rem; }
+#block-homepage p { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; width: 70%; font-size: 18px; line-height: 3.2rem; letter-spacing: 0.15rem; color: #ffffff; }
 #block-homepage p::before { font-family: "Font Awesome 5 Free", "Pyidaungsu-Regular", "Arial", sans-serif; content: "\f10d"; margin-right: 10px; }
 #block-homepage p::after { font-family: "Font Awesome 5 Free", "Pyidaungsu-Regular", "Arial", sans-serif; content: "\f10e"; margin-left: 10px; }
 #block-homepage svg { display: none; }
@@ -5631,12 +5631,13 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 #block-wepassionate h2 { color: #e5191e; }
 #block-wepassionate p { color: #ffffff; transition: all 0.5s; }
 #block-wepassionate p:hover { color: #e5191e; }
+#block-wepassionate .content { margin: 4rem 0; }
 
 .create-wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; }
 .create-left { margin-right: 5rem; }
 
 #block-services { background-image: url("../images/services-bg.jpg"); background-size: cover; background-repeat: no-repeat; }
-#block-services .services { max-width: 960px; margin: 0 auto; padding: 4em 0; }
+#block-services .services { max-width: 960px; margin: 0 auto; padding: 4rem 0; }
 #block-services .services-wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; }
 #block-services .services-wrap div:not(:last-child) { margin-right: 10rem; position: relative; }
 #block-services .services-wrap div:not(:last-child)::after { content: ""; width: 1px; height: 12rem; background: #e5191e; position: absolute; right: -44px; top: 19px; }

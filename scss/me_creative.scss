@@ -206,14 +206,14 @@ div#block-inspiral-theme-page-title {
     margin-bottom: 0;
     text-transform: uppercase;
     font-size: 4.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
   p {
     @include text-font-unicode-family("Ubuntu-Light");
     @extend %fa-icon;
     @extend .fas;
+    width: 70%;
     font-size: 18px;
-    width: 20%;
     line-height: 3.2rem;
     letter-spacing: 0.15rem;
     color: $color-white;
@@ -251,6 +251,9 @@ div#block-inspiral-theme-page-title {
       color: $secondary-color;
     }
   }
+  .content {
+    margin: 4rem 0;
+  }
 }
 
 .create {
@@ -270,7 +273,7 @@ div#block-inspiral-theme-page-title {
   background-repeat: no-repeat;
   .services {
     @include wrapper(960px);
-    padding: 4em 0;
+    padding: 4rem 0;
     &-wrap {
       @include flexbox;
       div:not(:last-child) {
