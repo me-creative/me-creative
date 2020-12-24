@@ -15,8 +15,8 @@ body {
   @include text-font-unicode-family("Ubuntu-Light");
   font-size: $p-font-size;
   color: $p-color;
-  line-height: 23px;
-  letter-spacing: 0.5px;
+  line-height: 2.3rem;
+  letter-spacing: 0.15rem;
   background: $primary-color url("../images/HomePageBGReadShape_PNG.png");
   background-repeat: no-repeat;
   background-size: 30%;
@@ -205,24 +205,35 @@ div#block-inspiral-theme-page-title {
   h1 {
     margin-bottom: 0;
     text-transform: uppercase;
+    font-size: 4.8rem;
+    margin-bottom: 1.5rem;
   }
   p {
     @include text-font-unicode-family("Ubuntu-Light");
     @extend %fa-icon;
     @extend .fas;
+    font-size: 18px;
     width: 20%;
+    line-height: 3.2rem;
+    letter-spacing: 0.15rem;
     color: $color-white;
     &::before {
       @include text-font-unicode-family("Font Awesome 5 Free");
       content: fa-content($fa-var-quote-left);
+      margin-right: 10px;
     }
     &::after {
       @include text-font-unicode-family("Font Awesome 5 Free");
       content: fa-content($fa-var-quote-right);
+      margin-left: 10px;
     }
   }
   svg {
     @include d-none;
+  }
+  .content {
+    margin-top: 4rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -259,6 +270,7 @@ div#block-inspiral-theme-page-title {
   background-repeat: no-repeat;
   .services {
     @include wrapper(960px);
+    padding: 4em 0;
     &-wrap {
       @include flexbox;
       div:not(:last-child) {

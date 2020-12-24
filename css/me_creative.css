@@ -5568,7 +5568,7 @@ a.text-dark:hover, a.text-dark:focus { color: #121416 !important; }
 /*------- Golbal -----------*/
 html { box-sizing: border-box; font-size: 62.5%; /* 10px/16px = 62.5% ~> 1rem = 10px */ /* global font-size */ }
 
-body { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; font-size: 1.4rem; color: #070712; line-height: 23px; letter-spacing: 0.5px; background: #000000 url("../images/HomePageBGReadShape_PNG.png"); background-repeat: no-repeat; background-size: 30%; background-position: right top; }
+body { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; font-size: 1.4rem; color: #070712; line-height: 2.3rem; letter-spacing: 0.15rem; background: #000000 url("../images/HomePageBGReadShape_PNG.png"); background-repeat: no-repeat; background-size: 30%; background-position: right top; }
 body h1, body h2, body h3 { font-family: "Philosopher-Regular", "Pyidaungsu-Regular", "Arial", sans-serif; }
 body h1 { font-size: 4.4rem; line-height: 4.9rem; }
 body h2 { color: #ffffff; font-size: 3.5rem; line-height: 39px; }
@@ -5620,11 +5620,12 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 .site-footer--img p { display: inline-block; vertical-align: middle; }
 
 #block-homepage { max-width: 960px; margin: 0 auto; }
-#block-homepage h1 { margin-bottom: 0; text-transform: uppercase; }
-#block-homepage p { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; width: 20%; color: #ffffff; }
-#block-homepage p::before { font-family: "Font Awesome 5 Free", "Pyidaungsu-Regular", "Arial", sans-serif; content: "\f10d"; }
-#block-homepage p::after { font-family: "Font Awesome 5 Free", "Pyidaungsu-Regular", "Arial", sans-serif; content: "\f10e"; }
+#block-homepage h1 { margin-bottom: 0; text-transform: uppercase; font-size: 4.8rem; margin-bottom: 1.5rem; }
+#block-homepage p { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; font-size: 18px; width: 20%; line-height: 3.2rem; letter-spacing: 0.15rem; color: #ffffff; }
+#block-homepage p::before { font-family: "Font Awesome 5 Free", "Pyidaungsu-Regular", "Arial", sans-serif; content: "\f10d"; margin-right: 10px; }
+#block-homepage p::after { font-family: "Font Awesome 5 Free", "Pyidaungsu-Regular", "Arial", sans-serif; content: "\f10e"; margin-left: 10px; }
 #block-homepage svg { display: none; }
+#block-homepage .content { margin-top: 4rem; margin-bottom: 10rem; }
 
 #block-wepassionate { max-width: 960px; margin: 0 auto; }
 #block-wepassionate h2 { color: #e5191e; }
@@ -5635,7 +5636,7 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 .create-left { margin-right: 5rem; }
 
 #block-services { background-image: url("../images/services-bg.jpg"); background-size: cover; background-repeat: no-repeat; }
-#block-services .services { max-width: 960px; margin: 0 auto; }
+#block-services .services { max-width: 960px; margin: 0 auto; padding: 4em 0; }
 #block-services .services-wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; }
 #block-services .services-wrap div:not(:last-child) { margin-right: 10rem; position: relative; }
 #block-services .services-wrap div:not(:last-child)::after { content: ""; width: 1px; height: 12rem; background: #e5191e; position: absolute; right: -44px; top: 19px; }
