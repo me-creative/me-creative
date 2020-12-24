@@ -145,13 +145,13 @@ div#block-inspiral-theme-page-title {
     @include justify-content-around;
     padding: 4rem 0;
   }
+  h2 {
+    color: $secondary-color;
+  }
 }
 
 .contact-us {
   position: relative;
-  h2 {
-    color: $secondary-color;
-  }
   p {
     color: $color-white;
   }
