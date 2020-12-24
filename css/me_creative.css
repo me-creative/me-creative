@@ -5606,6 +5606,7 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 .featured-bottom .field { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; padding: 4rem 0; }
 
 .contact-us { position: relative; }
+.contact-us h2 { color: #a10000; }
 .contact-us p { color: #ffffff; }
 .contact-us a { color: #ffffff; transition: all 0.5s; }
 .contact-us a:hover { color: #a10000; }

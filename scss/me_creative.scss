@@ -149,6 +149,9 @@ div#block-inspiral-theme-page-title {
 
 .contact-us {
   position: relative;
+  h2 {
+    color: $secondary-color;
+  }
   p {
     color: $color-white;
   }
