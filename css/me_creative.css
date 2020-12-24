@@ -5594,8 +5594,8 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 
 .navbar { padding: 0; }
 .navbar-collapse ul li.nav-item a { color: #ffffff; padding: 3rem !important; font-size: 1.9rem; display: block; overflow: hidden; position: relative; transition: all 0.7s; }
-.navbar-collapse ul li.nav-item a::before { content: ""; width: 60px; position: absolute; border-bottom: 2px solid #e5191e; bottom: 0; right: 350px; transition: all 0.7s; }
-.navbar-collapse ul li.nav-item a:hover { color: #e5191e; }
+.navbar-collapse ul li.nav-item a::before { content: ""; width: 60px; position: absolute; border-bottom: 2px solid #a10000; bottom: 0; right: 350px; transition: all 0.7s; }
+.navbar-collapse ul li.nav-item a:hover { color: #a10000; }
 .navbar-collapse ul li.nav-item a:hover::before { right: 0; }
 
 #header { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; padding: 2px 0; }
@@ -5608,10 +5608,10 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 .contact-us { position: relative; }
 .contact-us p { color: #ffffff; }
 .contact-us a { color: #ffffff; transition: all 0.5s; }
-.contact-us a:hover { color: #e5191e; }
+.contact-us a:hover { color: #a10000; }
 .contact-us::after { content: ""; width: 2px; height: 15rem; background: red; position: absolute; right: -15rem; top: 2.5rem; }
 
-.site-footer { background: #e5191e; }
+.site-footer { background: #a10000; }
 .site-footer .region { display: block; }
 .site-footer .field { padding: 15px 10px; }
 .site-footer .field p { color: #ffffff; margin-bottom: 0; }
@@ -5621,16 +5621,16 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 
 #block-homepage { max-width: 960px; margin: 0 auto; }
 #block-homepage h1 { margin-bottom: 0; text-transform: uppercase; font-size: 4.8rem; margin-bottom: 2rem; }
-#block-homepage p { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; width: 70%; font-size: 18px; line-height: 3.2rem; letter-spacing: 0.15rem; color: #ffffff; }
+#block-homepage p { font-family: "Ubuntu-Light", "Pyidaungsu-Regular", "Arial", sans-serif; width: 40%; font-size: 18px; line-height: 3.2rem; letter-spacing: 0.15rem; color: #ffffff; }
 #block-homepage p::before { font-family: "Font Awesome 5 Free", "Pyidaungsu-Regular", "Arial", sans-serif; content: "\f10d"; margin-right: 10px; }
 #block-homepage p::after { font-family: "Font Awesome 5 Free", "Pyidaungsu-Regular", "Arial", sans-serif; content: "\f10e"; margin-left: 10px; }
 #block-homepage svg { display: none; }
 #block-homepage .content { margin-top: 4rem; margin-bottom: 10rem; }
 
 #block-wepassionate { max-width: 960px; margin: 0 auto; }
-#block-wepassionate h2 { color: #e5191e; }
+#block-wepassionate h2 { color: #a10000; }
 #block-wepassionate p { color: #ffffff; transition: all 0.5s; }
-#block-wepassionate p:hover { color: #e5191e; }
+#block-wepassionate p:hover { color: #a10000; }
 #block-wepassionate .content { margin: 4rem 0; }
 
 .create-wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; }
@@ -5640,9 +5640,9 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 #block-services .services { max-width: 960px; margin: 0 auto; padding: 4rem 0; }
 #block-services .services-wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; }
 #block-services .services-wrap div:not(:last-child) { margin-right: 10rem; position: relative; }
-#block-services .services-wrap div:not(:last-child)::after { content: ""; width: 1px; height: 12rem; background: #e5191e; position: absolute; right: -44px; top: 19px; }
+#block-services .services-wrap div:not(:last-child)::after { content: ""; width: 1px; height: 12rem; background: #a10000; position: absolute; right: -44px; top: 19px; }
 #block-services .field { background: #000000; }
 #block-services .content { padding: 10rem 0; }
-#block-services h2 { color: #e5191e; }
+#block-services h2 { color: #a10000; }
 #block-services p { color: #ffffff; transition: all 0.5s; text-transform: capitalize; }
-#block-services p:hover { color: #e5191e; }
+#block-services p:hover { color: #a10000; }
