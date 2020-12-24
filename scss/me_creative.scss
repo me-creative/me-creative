@@ -132,6 +132,17 @@ div#block-inspiral-theme-page-title {
   }
 }
 
+// Videl Slider
+#block-views-block-testing-video-slider-block-1 {
+  @include wrapper(960px);
+  @include flexbox;
+  @include justify-content-center;
+  .item-list,
+  .list-group {
+    display: block;
+  }
+}
+
 // featured-bottom (contact us)
 
 .featured-bottom {
