@@ -135,6 +135,7 @@ div#block-inspiral-theme-page-title {
 // Videl Slider
 #block-views-block-testing-video-slider-block-1 {
   @include wrapper(960px);
+  padding: 4rem 0;
   .content {
     @include flexbox;
     @include justify-content-center;
@@ -148,6 +149,14 @@ div#block-inspiral-theme-page-title {
   }
 }
 
+.views-slideshow-controls-bottom .views-slideshow-pager-bullets li {
+  background: $color-white !important;
+  border: 1px solid $color-white !important;
+  &.active {
+    background: $secondary-color !important;
+    border: 1px solid $secondary-color !important;
+  }
+}
 // featured-bottom (contact us)
 
 .featured-bottom {
