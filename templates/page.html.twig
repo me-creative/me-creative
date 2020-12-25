@@ -69,6 +69,9 @@
 #}
 <div id="page-wrapper">
   <div id="page">
+  <div id="social" class="role-wrapper">
+      {{ page.social_header} }}
+    </div>
     {% if page.top_header %}
        <div class="top-header">
         <aside class="{{ container }} section clearfix" role="complementary">
@@ -165,7 +168,7 @@
       {% endblock %}
     </div>
     <div id="rates" class="role-wrapper">
-      {{ page.custom_block}
+      {{ page.custom_block} }}
     </div>
     {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
       <div class="featured-bottom" id="contact-us">
