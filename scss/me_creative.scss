@@ -91,20 +91,49 @@ div#block-inspiral-theme-page-title {
 }
 
 // SOCIAL MEIDA
+#social-media {
+  @include wrapper(1170px);
+  padding-top: 2rem;
+  .row {
+    margin: 0;
+    @include justify-content-end;
+  }
+}
+
 .social-icon {
-  @extend %fa-icon;
-  @extend .fas;
+  &-gmail,
+  &-phone {
+    @extend %fa-icon;
+    @extend .fas;
+  }
   &-gmail::after {
     @include text-font-unicode-family("Font Awesome 5 Free");
     content: fa-content($fa-var-envelope);
+    font-size: 2rem;
   }
-  &-fb::after {
-    @include text-font-unicode-family("Font Awesome 5 Free");
-    content: fa-content($fa-var-facebook-f);
+  &-fb {
+    @extend %fa-icon;
+    @extend .fab;
+    &::after {
+      @include text-font-unicode-family("Font Awesome 5 Free");
+      content: fa-content($fa-var-facebook-f);
+      font-size: 2rem;
+    }
   }
   &-phone::after {
     @include text-font-unicode-family("Font Awesome 5 Free");
     content: fa-content($fa-var-phone);
+    font-size: 2rem;
+  }
+  .social {
+    color: $color-white;
+    transition: all 0.5s;
+    svg {
+      display: none;
+    }
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }
 // Main Nav
