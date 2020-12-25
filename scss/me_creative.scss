@@ -103,6 +103,18 @@ div#block-inspiral-theme-page-title {
       overflow: hidden;
       position: relative;
       transition: all 0.7s;
+      &.is-active {
+        color: $secondary-color;
+        &::before {
+          content: "";
+          width: 60px;
+          position: absolute;
+          border-bottom: 2px solid $secondary-color;
+          bottom: 0;
+          right: 350px;
+          transition: all 0.7s;
+        }
+      }
       &::before {
         content: "";
         width: 60px;
