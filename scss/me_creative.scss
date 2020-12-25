@@ -90,6 +90,23 @@ div#block-inspiral-theme-page-title {
   @include d-none;
 }
 
+// SOCIAL MEIDA
+.social-icon {
+  @extend %fa-icon;
+  @extend .fas;
+  &-gmail::after {
+    @include text-font-unicode-family("Font Awesome 5 Free");
+    content: fa-content($fa-var-envelope);
+  }
+  &-fb::after {
+    @include text-font-unicode-family("Font Awesome 5 Free");
+    content: fa-content($fa-var-facebook-f);
+  }
+  &-phone::after {
+    @include text-font-unicode-family("Font Awesome 5 Free");
+    content: fa-content($fa-var-phone);
+  }
+}
 // Main Nav
 
 .navbar {
