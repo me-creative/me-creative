@@ -5620,7 +5620,7 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 .contact-us p { color: #ffffff; }
 .contact-us a { color: #ffffff; transition: all 0.5s; }
 .contact-us a:hover { color: #a10000; }
-.contact-us::after { content: ""; width: 2px; height: 15rem; background: red; position: absolute; right: -15rem; top: 2.5rem; }
+.contact-us::after { content: ""; width: 2px; height: 15rem; background: #a10000; position: absolute; right: -15rem; top: 2.5rem; }
 
 .site-footer { background: #a10000; }
 .site-footer .region { display: block; }
