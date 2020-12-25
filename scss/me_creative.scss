@@ -102,6 +102,12 @@ div#block-inspiral-theme-page-title {
 
 .social-icon {
   &-gmail,
+  &-phone,
+  &-fb {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  &-gmail,
   &-phone {
     @extend %fa-icon;
     @extend .fas;
@@ -109,7 +115,6 @@ div#block-inspiral-theme-page-title {
   &-gmail::after {
     @include text-font-unicode-family("Font Awesome 5 Free");
     content: fa-content($fa-var-envelope);
-    font-size: 2rem;
   }
   &-fb {
     @extend %fa-icon;
@@ -117,13 +122,11 @@ div#block-inspiral-theme-page-title {
     &::after {
       @include text-font-unicode-family("Font Awesome 5 brands");
       content: fa-content($fa-var-facebook-f);
-      font-size: 2rem;
     }
   }
   &-phone::after {
     @include text-font-unicode-family("Font Awesome 5 Free");
     content: fa-content($fa-var-phone);
-    font-size: 2rem;
   }
   .social {
     color: $color-white;
@@ -133,6 +136,9 @@ div#block-inspiral-theme-page-title {
     }
     &:hover {
       color: $secondary-color;
+    }
+    &:not(:last-child) {
+      margin-right: 1.5rem;
     }
   }
 }
