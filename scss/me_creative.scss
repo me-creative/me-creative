@@ -312,7 +312,11 @@ div#block-inspiral-theme-page-title {
   background-repeat: no-repeat;
   .services {
     @include wrapper(960px);
-    padding: 4rem 0;
+    padding: 10rem 0;
+    background: url("../images/dots.png");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: right;
     &-wrap {
       @include flexbox;
       div:not(:last-child) {
