@@ -5596,7 +5596,7 @@ div#panels-ipe-content, div#panels-ipe-tray, .item-list, .bs-1col .bs-region .bl
 #social-media .row { margin: 0; -ms-flex-pack: end; justify-content: flex-end; }
 
 .social-icon-gmail::after { font-family: "Font Awesome 5 Free", "Pyidaungsu-Regular", "Arial", sans-serif; content: "\f0e0"; font-size: 2rem; }
-.social-icon-fb::after { font-family: "Font Awesome 5 Free", "Pyidaungsu-Regular", "Arial", sans-serif; content: "\f39e"; font-size: 2rem; }
+.social-icon-fb::after { font-family: "Font Awesome 5 brands", "Pyidaungsu-Regular", "Arial", sans-serif; content: "\f39e"; font-size: 2rem; }
 .social-icon-phone::after { font-family: "Font Awesome 5 Free", "Pyidaungsu-Regular", "Arial", sans-serif; content: "\f095"; font-size: 2rem; }
 .social-icon .social { color: #ffffff; transition: all 0.5s; }
 .social-icon .social svg { display: none; }

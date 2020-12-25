@@ -115,7 +115,7 @@ div#block-inspiral-theme-page-title {
     @extend %fa-icon;
     @extend .fab;
     &::after {
-      @include text-font-unicode-family("Font Awesome 5 Free");
+      @include text-font-unicode-family("Font Awesome 5 brands");
       content: fa-content($fa-var-facebook-f);
       font-size: 2rem;
     }
