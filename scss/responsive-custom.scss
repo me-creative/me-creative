@@ -8,9 +8,13 @@
     @include flex-wrap;
     .navbar-toggler {
       display: block;
+      outline: none;
     }
     .navbar-nav {
       @include flex-column;
+    }
+    .navbar-collapse {
+      flex-basis: 100%;
     }
   }
   .navbar-toggler-icon {
@@ -30,5 +34,12 @@
     &::before {
       top: 6px;
     }
+  }
+  .collapse.show {
+    display: block !important;
+  }
+  #navbar-top {
+    width: $one-column-width;
+    margin: 0 2rem;
   }
 }
