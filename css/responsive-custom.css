@@ -11,4 +11,11 @@ h1, h2 { font-family: NeurialGrotesk-Medium, "Pyidaungsu-Bold", "Arial", sans-se
 
 /* CUSTOM STARTS HERE
 --------------------------------------------------*/
-@media only screen and (max-width: 1024px) { .collapse:not(.show) { display: none !important; } }
+@media only screen and (max-width: 1024px) { .collapse:not(.show) { display: none !important; }
+  .navbar-expand-lg { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .navbar-expand-lg .navbar-toggler { display: block; }
+  .navbar-expand-lg .navbar-nav { -ms-flex-direction: column; flex-direction: column; }
+  .navbar-toggler-icon { width: 3rem; height: 3px; background-image: none !important; background-color: #ffffff; display: inline-block; border-radius: 10px; position: relative; }
+  .navbar-toggler-icon::after, .navbar-toggler-icon::before { width: 3rem; height: 3px; background-image: none !important; background-color: #ffffff; display: inline-block; border-radius: 10px; content: ""; position: absolute; left: 0; transition: all 0.3s ease-out; }
+  .navbar-toggler-icon::after { top: -6px; }
+  .navbar-toggler-icon::before { top: 6px; } }

@@ -4,4 +4,31 @@
   .collapse:not(.show) {
     display: none !important;
   }
+  .navbar-expand-lg {
+    @include flex-wrap;
+    .navbar-toggler {
+      display: block;
+    }
+    .navbar-nav {
+      @include flex-column;
+    }
+  }
+  .navbar-toggler-icon {
+    @include hg-btn;
+    position: relative;
+    &::after,
+    &::before {
+      @include hg-btn;
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.3s ease-out;
+    }
+    &::after {
+      top: -6px;
+    }
+    &::before {
+      top: 6px;
+    }
+  }
 }

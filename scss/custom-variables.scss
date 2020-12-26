@@ -565,3 +565,12 @@ h2 {
   font-size: $h5-font-size;
   line-height: 23px;
 }
+
+@mixin hg-btn {
+  width: 3rem;
+  height: 3px;
+  background-image: none !important;
+  background-color: $color-white;
+  display: inline-block;
+  border-radius: 10px;
+}
