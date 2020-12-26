@@ -1,7 +1,7 @@
 @import "custom-variables";
 
-@media only screen and (min-width: 1025px) {
-  .navbar-expand-lg .navbar-toggler {
-    display: none;
+@media only screen and (max-width: 1024px) {
+  .collapse:not(.show) {
+    display: none !important;
   }
 }
