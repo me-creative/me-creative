@@ -1,29 +1,61 @@
-/* VARIABLES */
-/* TYPOGRAPHY */
-@font-face { font-family: "Philosopher-Regular"; src: url('../fonts/Philosopher-R.ttf?1600490121') format('truetype'), url('../fonts/Philosopher-R.woff?1600490121') format('woff'), url('../fonts/Philosopher-R.eot?1600490121') format('embedded-opentype'), url('../fonts/Philosopher-R.svg?1600490121') format('svg'); }
-@font-face { font-family: "Philosopher-Bold"; src: url('../fonts/Philosopher-B.ttf?1600490121') format('truetype'), url('../fonts/Philosopher-B.woff?1600490121') format('woff'), url('../fonts/Philosopher-B.eot?1600490121') format('embedded-opentype'), url('../fonts/Philosopher-B.svg?1600490121') format('svg'); }
-@font-face { font-family: "Ubuntu-Regular"; src: url('../fonts/Ubuntu-R.ttf?1600490121') format('truetype'), url('../fonts/Ubuntu-R.woff?1600490121') format('woff'), url('../fonts/Ubuntu-R.eot?1600490121') format('embedded-opentype'), url('../fonts/Ubuntu-R.svg?1600490121') format('svg'); }
-@font-face { font-family: "Ubuntu-Light"; src: url('../fonts/Ubuntu-L.ttf?1600490121') format('truetype'), url('../fonts/Ubuntu-L.woff?1600490121') format('woff'), url('../fonts/Ubuntu-L.eot?1600490121') format('embedded-opentype'), url('../fonts/Ubuntu-L.svg?1600490121') format('svg'); }
-@font-face { font-family: "Ubuntu-Bold"; src: url('../fonts/Ubuntu-B.ttf?1600490121') format('truetype'), url('../fonts/Ubuntu-B.woff?1600490121') format('woff'), url('../fonts/Ubuntu-B.eot?1600490121') format('embedded-opentype'), url('../fonts/Ubuntu-B.svg?1600490121') format('svg'); }
-@font-face { font-family: "Pyidaungsu-Regular"; src: url('../fonts/Pyidaungsu-1.8_Regular.ttf?1600490121') format('truetype'), url('../fonts/Pyidaungsu-1.8_Regular.woff?1600490121') format('woff'), url('../fonts/Pyidaungsu-1.8_Regular.eot?1600490121') format('embedded-opentype'), url('../fonts/Pyidaungsu-1.8_Regular.svg?1600490121') format('svg'); }
-@font-face { font-family: "Pyidaungsu-Bold"; src: url('../fonts/Pyidaungsu-1.8_Bold.ttf?1600490121') format('truetype'), url('../fonts/Pyidaungsu-1.8_Bold.woff?1600490121') format('woff'), url('../fonts/Pyidaungsu-1.8_Bold.eot?1600490121') format('embedded-opentype'), url('../fonts/Pyidaungsu-1.8_Bold.svg?1600490121') format('svg'); }
-h1, h2 { font-family: NeurialGrotesk-Medium, "Pyidaungsu-Bold", "Arial", sans-serif; font-size: 48px; line-height: 56px; margin-bottom: 30px; color: #fff; }
+/*
+Error: Invalid CSS after "      position": expected ";", was ": absolute;"
+        on line 55 of /Users/inspiral/Desktop/me-creative/scss/responsive-custom.scss
 
-/* CUSTOM STARTS HERE
---------------------------------------------------*/
-@media only screen and (max-width: 1024px) { #navbar-top { width: 100%; margin: 0 2rem; }
-  .collapse:not(.show) { display: none !important; }
-  .navbar-expand-lg { -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; }
-  .navbar-expand-lg .navbar-toggler { -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); height: 7rem; width: 7rem; display: block; outline: none; position: fixed; right: 60px; top: 10rem; background: #ffffff; z-index: 2000; border-radius: 50%; text-align: center; cursor: pointer; }
-  .navbar-expand-lg .navbar-toggler.active ~ .navbar-background { -webkit-transform: scale(80); -moz-transform: scale(80); -ms-transform: scale(80); -o-transform: scale(80); transform: scale(80); }
-  .navbar-expand-lg .navbar-toggler.active .navbar-toggler-icon { background: transparent; }
-  .navbar-expand-lg .navbar-toggler.active .navbar-toggler-icon::before { top: 0; transform: rotate(-135deg); }
-  .navbar-expand-lg .navbar-toggler.active .navbar-toggler-icon::after { top: 0; transform: rotate(135deg); }
-  .navbar-expand-lg .navbar-nav { -ms-flex-direction: column; flex-direction: column; }
-  .navbar-expand-lg .navbar-collapse { flex-basis: 100%; }
-  .navbar-toggler-icon { width: 3rem; height: 3px; background-image: none !important; background-color: #000000; display: inline-block; border-radius: 10px; position: relative; }
-  .navbar-toggler-icon::after, .navbar-toggler-icon::before { width: 3rem; height: 3px; background-image: none !important; background-color: #000000; display: inline-block; border-radius: 10px; content: ""; position: absolute; left: 0; transition: all 0.3s ease-out; }
-  .navbar-toggler-icon::after { top: -6px; }
-  .navbar-toggler-icon::before { top: 6px; }
-  .collapse.show { display: block !important; }
-  .navbar-background { height: 6rem; width: 6rem; border-radius: 50%; position: fixed; top: 10.5rem; right: 6.5rem; background: #fff; z-index: 1000; transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); } }
+50:       }
+51:     }
+52:     .navbar-nav {
+53:       @include flex-column;
+54:       width: $one-column-width
+55:       position: absolute;
+56:       top: 50%;
+57:       left: 50%;
+58:       transform: translate(-50%, -50%);
+59:       list-style: none;
+60:       text-align: center;
+
+Backtrace:
+/Users/inspiral/Desktop/me-creative/scss/responsive-custom.scss:55
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:786:in `block in try_declaration'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1183:in `rethrow'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:791:in `try_declaration'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:409:in `media_directive'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:222:in `special_directive'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:197:in `directive'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/inspiral/.rvm/gems/ruby-2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"      position\": expected \";\", was \": absolute;\"\A         on line 55 of /Users/inspiral/Desktop/me-creative/scss/responsive-custom.scss\A \A 50:       }\A 51:     }\A 52:     .navbar-nav {\A 53:       @include flex-column;\A 54:       width: $one-column-width\A 55:       position: absolute;\A 56:       top: 50%;\A 57:       left: 50%;\A 58:       transform: translate(-50%, -50%);\A 59:       list-style: none;\A 60:       text-align: center;"; }

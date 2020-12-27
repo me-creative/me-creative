@@ -1,6 +1,9 @@
 @import "custom-variables";
 
 @media only screen and (max-width: 1024px) {
+    #header .contextual-region {
+        position: unset;
+    }
   #navbar-top {
     width: $one-column-width;
     margin: 0 2rem;
@@ -29,6 +32,10 @@
         & ~ .navbar-background {
           @include scale(80);
         }
+        & ~ .navbar-collapse {
+            opacity: 1;
+            width: $one-column-width;
+        }
         .navbar-toggler-icon {
           background: transparent;
           &::before {
@@ -44,9 +51,24 @@
     }
     .navbar-nav {
       @include flex-column;
+      width: $one-column-width
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      list-style: none;
+      text-align: center;
     }
     .navbar-collapse {
-      flex-basis: 100%;
+      height: 100vh;
+      width: 0px;
+      flex-basis: $one-column-width;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index: 1500;
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
     }
   }
   .navbar-toggler-icon {
