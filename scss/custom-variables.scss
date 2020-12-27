@@ -570,7 +570,23 @@ h2 {
   width: 3rem;
   height: 3px;
   background-image: none !important;
-  background-color: $color-white;
+  background-color: $primary-color;
   display: inline-block;
   border-radius: 10px;
 }
+
+@mixin scale($ratio) {
+  -webkit-transform: scale($ratio);
+  -moz-transform: scale($ratio);
+  -ms-transform: scale($ratio);
+  -o-transform: scale($ratio);
+  transform: scale($ratio);
+}
+
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params;
+  -moz-box-shadow: $params;
+  box-shadow: $params;
+}
+
+$shadows: 0 1rem 3rem rgba(0, 0, 0, 0.1);
