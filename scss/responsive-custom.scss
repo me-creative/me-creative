@@ -29,6 +29,10 @@
         & ~ .navbar-background {
           @include scale(80);
         }
+        & ~ .navbar-collapse {
+          opacity: 1;
+          width: $one-column-width;
+        }
         .navbar-toggler-icon {
           background: transparent;
           &::before {
@@ -44,9 +48,29 @@
     }
     .navbar-nav {
       @include flex-column;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      list-style: none;
+      text-align: center;
+      width: $one-column-width;
     }
     .navbar-collapse {
-      flex-basis: 100%;
+      flex-basis: $one-column-width;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1500;
+      opacity: 0;
+      width: 0;
+      -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      .contextual-region {
+        position: unset;
+      }
     }
   }
   .navbar-toggler-icon {
