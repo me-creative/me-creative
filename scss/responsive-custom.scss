@@ -1,14 +1,34 @@
 @import "custom-variables";
 
 @media only screen and (max-width: 1024px) {
+  #navbar-top {
+    width: $one-column-width;
+    margin: 0 2rem;
+  }
   .collapse:not(.show) {
     display: none !important;
   }
   .navbar-expand-lg {
     @include flex-wrap;
+    width: $one-column-width;
     .navbar-toggler {
       display: block;
       outline: none;
+      position: absolute;
+      right: 0;
+      top: -70px;
+      padding: 2rem;
+      &.active .navbar-toggler-icon {
+        background: transparent;
+        &::before {
+          top: 0;
+          transform: rotate(-135deg);
+        }
+        &::after {
+          top: 0;
+          transform: rotate(135deg);
+        }
+      }
     }
     .navbar-nav {
       @include flex-column;
@@ -37,9 +57,5 @@
   }
   .collapse.show {
     display: block !important;
-  }
-  #navbar-top {
-    width: $one-column-width;
-    margin: 0 2rem;
   }
 }
