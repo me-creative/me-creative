@@ -16,7 +16,6 @@ h1, h2 { font-family: NeurialGrotesk-Medium, "Pyidaungsu-Bold", "Arial", sans-se
   .navbar-expand-lg { -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; }
   .navbar-expand-lg .navbar-toggler { -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); height: 7rem; width: 7rem; display: block; outline: none; position: fixed; right: 60px; top: 10rem; background: #ffffff; z-index: 2000; border-radius: 50%; text-align: center; cursor: pointer; }
   .navbar-expand-lg .navbar-toggler.active ~ .navbar-background { -webkit-transform: scale(80); -moz-transform: scale(80); -ms-transform: scale(80); -o-transform: scale(80); transform: scale(80); }
-  .navbar-expand-lg .navbar-toggler.active ~ .navbar-collapse { opacity: 1; width: 100%; }
   .navbar-expand-lg .navbar-toggler.active .navbar-toggler-icon { background: transparent; }
   .navbar-expand-lg .navbar-toggler.active .navbar-toggler-icon::before { top: 0; transform: rotate(-135deg); }
   .navbar-expand-lg .navbar-toggler.active .navbar-toggler-icon::after { top: 0; transform: rotate(135deg); }
@@ -27,5 +26,5 @@ h1, h2 { font-family: NeurialGrotesk-Medium, "Pyidaungsu-Bold", "Arial", sans-se
   .navbar-toggler-icon::after, .navbar-toggler-icon::before { width: 3rem; height: 3px; background-image: none !important; background-color: #000000; display: inline-block; border-radius: 10px; content: ""; position: absolute; left: 0; transition: all 0.3s ease-out; }
   .navbar-toggler-icon::after { top: -6px; }
   .navbar-toggler-icon::before { top: 6px; }
-  .collapse.show { display: block !important; }
-  .navbar-background { height: 6rem; width: 6rem; border-radius: 50%; position: fixed; top: 10.5rem; right: 6.5rem; background: #fff; z-index: 1000; transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); } }
+  .collapse.show { opacity: 1; width: 100%; }
+  .navbar-background { height: 6rem; width: 6rem; border-radius: 50%; position: fixed; top: 10.5rem; right: 6.5rem; background: #a10000; z-index: 1000; transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); } }
