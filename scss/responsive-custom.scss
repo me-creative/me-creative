@@ -12,23 +12,12 @@
     @include flex-wrap;
     width: $one-column-width;
     .navbar-toggler {
-      @include box-shadow($shadows);
       height: 7rem;
       width: 7rem;
       display: block;
       outline: none;
-      position: fixed;
-      right: 60px;
-      top: 10rem;
-      background: $color-white;
-      z-index: 2000;
-      border-radius: 50%;
-      text-align: center;
       cursor: pointer;
       &.active {
-        & ~ .navbar-background {
-          @include scale(80);
-        }
         .navbar-toggler-icon {
           background: transparent;
           &::before {
@@ -44,29 +33,9 @@
     }
     .navbar-nav {
       @include flex-column;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      list-style: none;
-      text-align: center;
-      width: $one-column-width;
     }
     .navbar-collapse {
       flex-basis: $one-column-width;
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1500;
-      opacity: 0;
-      width: 0;
-      -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      .contextual-region {
-        position: unset;
-      }
     }
   }
   .navbar-toggler-icon {
@@ -86,20 +55,5 @@
     &::before {
       top: 6px;
     }
-  }
-  .collapse.show {
-    opacity: 1;
-    width: $one-column-width;
-  }
-  .navbar-background {
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    position: fixed;
-    top: 10.5rem;
-    right: 6.5rem;
-    background: $secondary-color;
-    z-index: 1000;
-    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   }
 }
