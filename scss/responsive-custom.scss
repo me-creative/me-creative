@@ -19,10 +19,10 @@
       position: fixed;
       right: 35px;
       top: 8.5rem;
-      z-index: 2;
+      z-index: 2000;
       &.active {
         & ~ .navbar-background {
-          @include scale(20);
+          @include scale(15);
         }
         .navbar-toggler-icon {
           background: transparent;
@@ -39,9 +39,19 @@
     }
     .navbar-nav {
       @include flex-column;
+      position: fixed;
+      top: 13rem;
+      right: 10rem;
+      text-align: center;
+      z-index: 2000;
+      display: none;
     }
     .navbar-collapse {
       flex-basis: $one-column-width;
+      &.show .navbar-nav {
+        display: block;
+        transition: all 0.3s;
+      }
     }
   }
   .navbar-toggler-icon {
@@ -71,10 +81,7 @@
     right: 4rem;
     background-image: radial-gradient(#7ed56f, #28b485);
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
-    transition: -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
-    transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
-    transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1),
-      -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
-    z-index: 1;
+    transition: 3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    z-index: 1000;
   }
 }
